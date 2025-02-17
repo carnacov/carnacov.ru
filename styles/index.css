@@ -1,0 +1,62 @@
+/* Global */
+
+/* Box Model */
+@import url('global/box-model.css');
+
+/* Normalize */
+
+@import url('global/normalize.css');
+
+/* Colors */
+
+@import url('colors/index.css');
+
+/* Blocks */
+
+/* Page */
+
+@import url('blocks/page/index.css');
+
+/* Header */
+
+@import url('blocks/header/index.css');
+
+/* Nav */
+
+@import url('blocks/nav/index.css');
+
+/* Social */
+
+@import url('blocks/social/index.css');
+
+/* Menu */
+
+@import url('blocks/menu/index.css');
+
+/* Fonts */
+
+/* Main */
+
+@import url('blocks/main/index.css');
+
+/* Contacts */
+
+@import url('blocks/contacts/index.css');
+
+/* Services */
+
+@import url('blocks/services/index.css');
+
+/* Footer */
+
+@import url('blocks/footer/index.css');
+
+@font-face {
+    font-family: 'Microsoft Sans Serif';
+    src: local('Microsoft Sans Serif Regular'), local('Microsoft-Sans-Serif-Regular'),
+        url('../fonts/MicrosoftSansSerif.woff2') format('woff2'),
+        url('../fonts/MicrosoftSansSerif.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+	font-display: swap;
+}

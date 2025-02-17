@@ -1,0 +1,7 @@
+/* Base */
+
+.services__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}

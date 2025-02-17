@@ -1,0 +1,21 @@
+/* Base */
+
+.footer {
+	border-top: solid 1px var(--color-text-secondary);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__link {
+	color: var(--color-creator);
+}
+
+.footer__link:hover {
+	color: var(--color-text-secondary);
+	transition: all 0.2s linear;
+}

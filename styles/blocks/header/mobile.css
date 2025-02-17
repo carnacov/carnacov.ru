@@ -1,0 +1,8 @@
+/* Mobile */
+
+@media (width <= 768px) {
+	.header__container {
+		flex-direction: column;
+		row-gap: 30px;
+	}
+}

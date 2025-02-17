@@ -1,0 +1,11 @@
+/* Base */
+
+.social__list {
+	display: flex;
+	column-gap: 30px;
+}
+
+.social__link:hover svg path {
+	fill: var(--color-creator);
+	transition: all 0.2s linear;
+}

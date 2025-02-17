@@ -1,0 +1,31 @@
+/* Base */
+
+.nav__list {
+	display: flex;
+	column-gap: 90px;
+	text-transform: uppercase;
+}
+
+.nav__link {
+	color: var(--color-text-prymari);
+	font-weight: 600;
+}
+
+.nav__link:hover {
+	color: var(--color-creator);
+	transition: all 0.2s linear;
+}
+
+.nav__link-active {
+	color: var(--color-creator);
+}
+
+.nav__link-active:hover {
+	color: var(--color-text-prymari);
+	transition: all 0.2s linear;
+}
+
+.nav__link-inactive {
+	color: var(--color-text-secondary);
+	font-weight: 600;
+}

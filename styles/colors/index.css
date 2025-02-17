@@ -1,0 +1,10 @@
+/* Colors */
+
+:root {
+	--color-black: #0C0B1E;
+	--color-white: #F5F5F5;
+	--color-lighter: #5F5F6D;
+	--color-darker: #8C8FA1;
+	--color-creator-light: #40D8D0;
+	--color-creator-dark: #5D59C8;
+}

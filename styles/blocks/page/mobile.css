@@ -1,0 +1,7 @@
+/* Mobile */
+
+@media (width <= 768px) {
+	.container {
+		padding: 0 15px;
+	}
+}

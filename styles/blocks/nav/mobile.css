@@ -1,0 +1,7 @@
+/* Mobile */
+
+@media (width <= 768px) {
+	.nav__list {
+		column-gap: 15px;
+	}
+}

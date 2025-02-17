@@ -1,0 +1,24 @@
+/* Mobile */
+
+@media (width <= 768px) {
+	.main__container {
+		flex-direction: column;
+		row-gap: 50px;
+	}
+
+	.main__container-left {
+		flex-direction: column;
+		row-gap: 30px;
+	}
+
+	.main__container-right {
+		flex-direction: column;
+		row-gap: 30px;
+	}
+
+	.main__title {
+		font-size: 28px;
+		max-width: 240px;
+		text-align: center;
+	}
+}

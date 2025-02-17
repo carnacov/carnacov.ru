@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Борис Карнаков - Фронтенд Разработчик</title>
+	<link rel="preload" href="./fonts/MicrosoftSansSerif.woff2" as="font">
+	<link type="image/x-icon" href="images/icons/favicon.png" rel="shortcut icon">
+  	<link type="Image/x-icon" href="images/icons/favicon.png" rel="icon">
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+</head>
+<body class="page__body">
+	<header class="header">
+		<div class="container header__container">
+			<nav class="nav">
+				<ul class="list-reset nav__list">
+					<li class="nav__item"><a href="#" class="nav__link nav__link-active">Обо мне</a></li>
+					<li class="nav__item"><a class="nav__link-inactive">Проекты</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+				</ul>
+			</nav>
+
+			<div class="social">
+				<ul class="list-reset social__list">
+					<li class="social__item">
+						<a href="https://t.me/carnacov" target="_blank" class="social__link">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M30 15C30 23.2843 23.2843 30 15 30C6.71572 30 0 23.2843 0 15C0 6.71573 6.71572 0 15 0C23.2843 0 30 6.71573 30 15ZM15.5246 11.0658C14.0633 11.6778 11.1532 12.9392 6.78183 14.8376C6.08244 15.1249 5.70774 15.3997 5.67025 15.6744C5.61491 16.139 6.1965 16.3195 6.98104 16.563C7.08229 16.5944 7.18691 16.6269 7.29395 16.6611C8.06831 16.9109 9.09247 17.1982 9.62947 17.2107C10.1166 17.2231 10.6536 17.0233 11.2532 16.6112C15.3372 13.851 17.4355 12.4521 17.5729 12.4271C17.6727 12.4022 17.7976 12.3772 17.8851 12.4521C17.9726 12.5271 17.9726 12.6769 17.96 12.7144C17.9004 12.9627 15.4634 15.2251 14.3549 16.2542C14.0694 16.5193 13.872 16.7025 13.826 16.7485C13.7088 16.8691 13.5896 16.9833 13.4749 17.0931C12.758 17.7793 12.22 18.2942 13.5013 19.1341C14.0835 19.5184 14.5531 19.8388 15.0156 20.1543C15.5749 20.536 16.1237 20.9104 16.8485 21.3822C17.0193 21.4943 17.1827 21.6106 17.3421 21.724C17.9643 22.1666 18.5255 22.5659 19.2215 22.5062C19.6212 22.4688 20.0334 22.0941 20.2457 20.97C20.7453 18.3222 21.7195 12.5645 21.9442 10.1915C21.9693 9.99167 21.9442 9.72939 21.9193 9.6045C21.8943 9.4796 21.8568 9.31724 21.707 9.19234C21.5196 9.04246 21.2449 9.01748 21.12 9.01748C20.5579 9.02998 19.6836 9.32972 15.5246 11.0658Z" fill="#5F5F6D"/>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social__item">
+						<a href="https://github.com/carnacov" target="_blank" class="social__link">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0124 0C6.71094 0 0 6.87497 0 15.3802C0 22.179 4.29993 27.9339 10.2651 29.9708C11.0109 30.1239 11.284 29.6399 11.284 29.2327C11.284 28.8761 11.2595 27.6539 11.2595 26.3805C7.08337 27.2974 6.21374 24.5471 6.21374 24.5471C5.54261 22.7646 4.54822 22.3065 4.54822 22.3065C3.18139 21.3643 4.64778 21.3643 4.64778 21.3643C6.16396 21.4662 6.95953 22.943 6.95953 22.943C8.30148 25.2855 10.4639 24.6236 11.3338 24.2161C11.458 23.223 11.8559 22.5355 12.2784 22.1537C8.94771 21.7971 5.44336 20.473 5.44336 14.5653C5.44336 12.8846 6.0395 11.5096 6.98412 10.4403C6.83508 10.0584 6.31299 8.47934 7.13346 6.36591C7.13346 6.36591 8.40104 5.95841 11.2592 7.94466C12.4828 7.60799 13.7448 7.43672 15.0124 7.43528C16.28 7.43528 17.5721 7.61372 18.7654 7.94466C21.6238 5.95841 22.8914 6.36591 22.8914 6.36591C23.7118 8.47934 23.1894 10.0584 23.0404 10.4403C24.0099 11.5096 24.5815 12.8846 24.5815 14.5653C24.5815 20.473 21.0771 21.7715 17.7215 22.1537C18.2685 22.6374 18.7405 23.554 18.7405 25.0055C18.7405 27.068 18.7159 28.7233 18.7159 29.2324C18.7159 29.6399 18.9894 30.1239 19.7349 29.9711C25.7 27.9336 29.9999 22.179 29.9999 15.3802C30.0245 6.87497 23.289 0 15.0124 0Z" fill="#5F5F6D"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container main__container">
+			<div class="main__container-left">
+				<section class="main__section about">
+					<h2 class="list-reset main__section-title">Обо мне</h2>
+
+					<div class="main__section-container">
+						<p class="list-reset main__section-sub">Люблю верстать сайты, рыбалку, книги, фильмы, начал учить английский. Веду свой маленький блог.</p>
+						<p class="list-reset main__section-sub">Here you will find information about me, my projects, portfolios and links.</p>
+						<p class="list-reset main__section-sub">перевожу:</p>
+						<p class="list-reset main__section-sub">Здесь вы найдете информацию обо мне, моих проектах, портфолио и ссылки.</p>
+					</div>
+				</section>
+
+				<section class="main__section contacts">
+					<h2 class="list-reset main__section-title">Контакты</h2>
+					<div class="main__section-container">
+					<p class="list-reset main__section-sub">Вы можете связаться со мной по электронной почте или в telegram</p>
+						<ul class="list-reset contacts__list">
+							<li class="contacts__item">
+								<a href="https://t.me/carnacov" target="_blank" class="contacts__link">
+									<svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M30.1226 0.220707C30.1226 0.220707 33.1689 -0.861435 32.915 1.76663C32.8304 2.84878 32.0688 6.63628 31.4765 10.733L29.4457 22.8685C29.4457 22.8685 29.2765 24.6463 27.7533 24.9555C26.2301 25.2646 23.9455 23.8733 23.5224 23.5641C23.1838 23.3323 17.176 19.8539 15.0604 18.1534C14.4681 17.6896 13.7912 16.7621 15.1451 15.6799L24.03 7.95035C25.0455 7.02278 26.0609 4.8585 21.83 7.48657L9.98338 14.8297C9.98338 14.8297 8.62948 15.6026 6.09096 14.907L0.590718 13.3611C0.590718 13.3611 -1.44013 12.2016 2.02924 11.0421C10.4911 7.40921 20.8993 3.699 30.1226 0.220707Z" fill="#5F5F6D"/>
+									</svg>
+
+									t.me/carnacov
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="mailto:hi@carnacov.ru" target="_blank" class="contacts__link">
+									<svg width="33" height="21" viewBox="0 0 33 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.447849 2.0475C9.81392e-08 2.85 0 3.9 0 6V15C0 17.1 9.81392e-08 18.15 0.447849 18.9525C0.842837 19.6579 1.47281 20.2313 2.24748 20.5905C3.12835 21 4.28091 21 6.58601 21H26.344C28.6491 21 29.8017 21 30.6826 20.5905C31.4566 20.231 32.0859 19.6577 32.4805 18.9525C32.93 18.15 32.93 17.1 32.93 15V6C32.93 3.9 32.93 2.85 32.4805 2.0475C32.0863 1.34176 31.4569 0.767842 30.6826 0.408C29.8017 -2.68221e-07 28.6491 0 26.344 0H6.58601C4.28091 0 3.12835 -2.68221e-07 2.24748 0.408C1.47255 0.767587 0.842557 1.34153 0.447849 2.0475ZM4.35829 3H28.5718C28.7485 2.9998 28.9207 3.05145 29.0627 3.14729C29.2048 3.24313 29.3092 3.37809 29.3605 3.53219C29.4119 3.68629 29.4074 3.85135 29.3478 4.00296C29.2882 4.15456 29.1766 4.28466 29.0295 4.374L17.3805 11.472C17.1096 11.6371 16.7909 11.7252 16.465 11.7252C16.1391 11.7252 15.8205 11.6371 15.5496 11.472L3.90056 4.374C3.75349 4.28466 3.64189 4.15456 3.58227 4.00296C3.52265 3.85135 3.51818 3.68629 3.56952 3.53219C3.62085 3.37809 3.72527 3.24313 3.86733 3.14729C4.00938 3.05145 4.18152 2.9998 4.35829 3Z" fill="#5F5F6D"/>
+									</svg>
+
+									hi@carnacov.ru
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+			<div class="main__container-center">
+				<h1 class="main__title">Борис Карнаков Frontend Разработчик</h1>
+
+				<img src="images/photo.jpg" alt="Борис Карнаков" class="main__image">
+			</div>
+
+			<div class="main__container-right">
+
+				<section class="main__section services">
+					<h2 class="list-reset main__section-title">Услуги</h2>
+					<div class="main__section-container">
+						<ul class="list-reset services__list">
+							<li class="services__item"><a class="services__link">Верстка сайта с нуля по макету.</a></li>
+							<li class="services__item"><a class="services__link">Доработка сайта(правки верстки, добавление новых эелементов, анимации).</a></li>
+							<li class="services__item"><a class="services__link">Верстка HTML-писем.</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="main__section skills">
+					<h2 class="list-reset main__section-title">Навыки</h2>
+					<div class="main__section-container">
+						<p class="list-reset main__section-sub">Некоторые из моих любимых технологий, тем или инструментов, с которыми я работал</p>
+
+						<table class="skills__table">
+							<tr class="skills__table-row">
+								<td class="skills__table-column">Editorconfig</td>
+								<td class="skills__table-column">HTML</td>
+							</tr>
+
+							<tr class="skills__table-row">
+								<td class="skills__table-column">Доступность</td>
+								<td class="skills__table-column">CSS</td>
+							</tr>
+
+							<tr class="skills__table-row">
+								<td class="skills__table-column">Кроссбраузерность</td>
+								<td class="skills__table-column">JavaScript</td>
+							</tr>
+
+							<tr class="skills__table-row">
+								<td class="skills__table-column">БЭМ</td>
+								<td class="skills__table-column">Mobile first</td>
+							</tr>
+
+							<tr class="skills__table-row">
+								<td class="skills__table-column">Адаптивность</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<p class="footer__copiright">carnacov.ru ©  2024 / задизайнено и заверсталено мной.</p>
+		</div>
+	</footer>
+</body>
+</html>

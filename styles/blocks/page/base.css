@@ -1,0 +1,30 @@
+/* Page */
+
+.page {
+	background-color: var(--color-back-primary);
+	color: var(--color-text-primary);
+	font-family: system-ui, sans-serif;
+	font-size: 18px;
+	line-height: 1;
+}
+
+a, u, li{
+	list-style: none;
+	text-decoration: 0;
+}
+
+/* Body */
+
+.page__body {
+	margin: 0;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 30px;
+}
