@@ -1,0 +1,26 @@
+/* Base */
+
+.works__list {
+	display: grid;
+	gap: 30px;
+}
+
+.works__item {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 5px;
+}
+
+.works__item-time {
+	grid-row: span 2;
+	color: var(--color-text-primary);
+}
+
+.works__item-co {
+	text-align: end;
+	color: var(--color-text-primary);
+}
+
+.works__item-post {
+	text-align: end;
+}

@@ -18,12 +18,16 @@
 	align-items: center;
 }
 
+.contacts__link svg path {
+	fill: var(--color-text-secondary);
+}
+
 .contacts__link:hover {
-	color: var(--color-creator);
+	color: var(--color-creator-primary);
 	transition: all 0.2s linear;
 }
 
 .contacts__link:hover svg path {
-	fill: var(--color-creator);
+	fill: var(--color-creator-primary);
 	transition: all 0.2s linear;
 }

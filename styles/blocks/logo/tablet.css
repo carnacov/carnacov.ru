@@ -1,0 +1,7 @@
+/* Desktop */
+
+@media (width <= 992px ) {
+	.header__logo {
+		order: 0;
+	}
+}

@@ -1,0 +1,13 @@
+/* Desktop */
+
+@media (width <= 992px ) {
+	.nav {
+		order: 2;
+		width: 100%;
+	}
+
+	.nav__list {
+		justify-content: center;
+		column-gap: 80px;
+	}
+}

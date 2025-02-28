@@ -1,0 +1,11 @@
+/* Desktop */
+
+@media (width <= 992px ) {
+	.section {
+		min-width: 100%;
+	}
+
+	.section__title {
+		font-size: 24px;
+	}
+}

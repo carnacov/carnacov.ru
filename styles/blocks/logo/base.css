@@ -1,0 +1,5 @@
+/* Base */
+
+.header__logo svg path {
+	fill: var(--color-creator-primary);
+}

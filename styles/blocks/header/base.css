@@ -2,10 +2,15 @@
 
 /* Header */
 
+.header {
+	margin-bottom: 50px;
+}
+
 .header__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	column-gap: 30px;
 }

@@ -1,0 +1,13 @@
+/* Desktop */
+
+@media (width <= 992px ) {
+	.header {
+		margin-bottom: 30px;
+	}
+
+	.header__container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		row-gap: 30px;
+	}
+}

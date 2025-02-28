@@ -26,5 +26,6 @@ a, u, li{
 
 .container {
 	margin: 0 auto;
-	padding: 0 30px;
+	padding: 0 50px;
+	max-width: 1230px;
 }

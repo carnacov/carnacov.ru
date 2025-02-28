@@ -5,7 +5,11 @@
 	column-gap: 30px;
 }
 
+.social__link svg path {
+	fill: var(--color-text-secondary);
+}
+
 .social__link:hover svg path {
-	fill: var(--color-creator);
+	fill: var(--color-creator-primary);
 	transition: all 0.2s linear;
 }

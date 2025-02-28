@@ -1,6 +1,10 @@
 /* Mobile */
 
-@media (width <= 768px) {
+@media (width <= 540px) {
+	.page {
+		font-size: 16px;
+	}
+
 	.container {
 		padding: 0 15px;
 	}

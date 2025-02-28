@@ -6,5 +6,6 @@
 	--color-back-primary: var(--color-white);
 	--color-text-primary: var(--color-black);
 	--color-text-secondary: var(--color-lighter);
-	--color-creator: var(--color-creator-light);
+	--color-creator-primary: var(--color-creator-light);
+	--color-creator-secondary: var(--color-creator-dark);
 }

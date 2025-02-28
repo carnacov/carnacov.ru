@@ -21,6 +21,9 @@
 
 @import url('blocks/header/index.css');
 
+/* Logo */
+@import url('blocks/logo/index.css');
+
 /* Nav */
 
 @import url('blocks/nav/index.css');
@@ -29,23 +32,25 @@
 
 @import url('blocks/social/index.css');
 
-/* Menu */
-
-@import url('blocks/menu/index.css');
-
-/* Fonts */
-
 /* Main */
 
 @import url('blocks/main/index.css');
 
+/* About */
+
+@import url('blocks/about/index.css');
+
+/* Skills */
+
+@import url('blocks/skills/index.css');
+
+/* Works */
+
+@import url('blocks/works/index.css');
+
 /* Contacts */
 
 @import url('blocks/contacts/index.css');
-
-/* Services */
-
-@import url('blocks/services/index.css');
 
 /* Footer */
 

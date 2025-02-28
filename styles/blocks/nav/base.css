@@ -7,21 +7,21 @@
 }
 
 .nav__link {
-	color: var(--color-text-prymari);
+	color: var(--color-text-primary);
 	font-weight: 600;
 }
 
 .nav__link:hover {
-	color: var(--color-creator);
+	color: var(--color-creator-primary);
 	transition: all 0.2s linear;
 }
 
 .nav__link-active {
-	color: var(--color-creator);
+	color: var(--color-creator-secondary);
 }
 
 .nav__link-active:hover {
-	color: var(--color-text-prymari);
+	color: var(--color-text-primary);
 	transition: all 0.2s linear;
 }
 

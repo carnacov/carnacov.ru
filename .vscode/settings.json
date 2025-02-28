@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "workbench.editor.enablePreview": true,
+    "search.useReplacePreview": true,
+    "ipynb.pasteImagesAsAttachments.enabled": true,
+    "svg.preview.autoFit": false
 }
