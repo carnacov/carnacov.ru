@@ -18,10 +18,6 @@
 		grid-column: span 1;
 		grid-row: span 2;
 	}
-
-	.portfolio__section-stack {
-		grid-column: span 1;
-	}
 }
 
 @media (width <= 768px ) {
@@ -36,9 +32,5 @@
 
 	.portfolio__section-img {
 		width: 100%;
-	}
-
-	.portfolio__section-stack {
-		grid-column: span 2;
 	}
 }
