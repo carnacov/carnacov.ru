@@ -1,0 +1,44 @@
+/* Desktop */
+
+@media (width <= 1230px ) {
+	.main__title {
+		margin: 0;
+	}
+
+	.portfolio {
+		row-gap: 50px;
+	}
+
+	.portfolio__section {
+		grid-column: span 2;
+		grid-template-columns: auto auto auto;
+	}
+
+	.portfolio__section-picture {
+		grid-column: span 1;
+		grid-row: span 2;
+	}
+
+	.portfolio__section-stack {
+		grid-column: span 1;
+	}
+}
+
+@media (width <= 768px ) {
+	.portfolio__section {
+		grid-column: span 2;
+		grid-template-columns: auto auto;
+	}
+
+	.portfolio__section-picture {
+		grid-column: span 2;
+	}
+
+	.portfolio__section-img {
+		width: 100%;
+	}
+
+	.portfolio__section-stack {
+		grid-column: span 2;
+	}
+}

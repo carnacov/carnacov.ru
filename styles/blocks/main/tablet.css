@@ -8,4 +8,9 @@
 	.section__title {
 		font-size: 24px;
 	}
+
+	.main__title {
+		font-size: 48px;
+		margin-bottom: 30px;
+	}
 }

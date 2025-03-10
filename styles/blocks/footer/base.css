@@ -8,16 +8,18 @@
 	color: var(--color-text-secondary);
 	padding-top: 50px;
 	padding-bottom: 50px;
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	row-gap: 50px;
+	grid-template-columns: auto auto;
 }
 
 .footer__logo {
 	display: flex;
 	align-items: center;
+	align-self: start;
 	column-gap: 25px;
 	color: var(--color-white);
+	grid-row: span 2;
 }
 
 .footer__logo svg path {
@@ -27,4 +29,17 @@
 .footer__copiright {
 	align-self: flex-end;
 	color: var(--color-white);
+	justify-self: end;
+}
+
+.footer__title {
+	font-size: 18px;
+	color: var(--color-white);
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	text-align: end;
+}
+
+.footer__contacts {
+	justify-self: end;
 }

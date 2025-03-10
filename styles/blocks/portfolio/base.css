@@ -1,0 +1,70 @@
+/* Base */
+
+.portfolio {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 50px;
+	margin-bottom: 100px;
+}
+
+.main__title {
+	grid-column: span 2;
+}
+
+.portfolio__section {
+	display: grid;
+	grid-template-columns: 45% 45%;
+	column-gap: 30px;
+	row-gap: 30px;
+}
+
+.portfolio__section-img {
+	border-radius: 20px;
+	border: solid 1px var(--color-text-secondary);
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.portfolio__section-picture {
+	grid-column: span 2;
+	display: block;
+}
+
+.portfolio__section-stack {
+	grid-column: span 2;
+}
+
+.portfolio__section-title {
+	font-size: 24px;
+	color: var(--color-creator-secondary);
+	max-width: 240px;
+	font-weight: normal;
+	text-align: start;
+}
+
+.portfolio__section-stack {
+	color: var(--color-text-secondary);
+	max-width: 240px;
+}
+
+.portfolio__section-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.portfolio__section-item {
+	align-self: flex-end;
+	text-align: end;
+}
+
+.portfolio__section-link {
+	text-transform: uppercase;
+	color: var(--color-text-secondary);
+}
+
+.portfolio__section-link:hover {
+	color: var(--color-creator-primary);
+	transition: all 0.2s linear;
+}

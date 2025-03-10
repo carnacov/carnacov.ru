@@ -28,3 +28,12 @@
 	justify-content: space-between;
 	column-gap: 50px;
 }
+
+.main__title {
+	color: var(--color-text-primary);
+	font-size: 64px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	align-self: flex-start;
+}

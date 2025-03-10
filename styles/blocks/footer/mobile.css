@@ -1,5 +1,27 @@
 /* Mobile */
 
 @media (width <= 540px) {
+	.footer__container {
+		grid-template-columns: auto;
+		row-gap: 30px;
+		align-items: center;
+	}
 
+	.footer__logo {
+		display: flex;
+		align-items: center;
+		justify-self: auto;
+	}
+
+	.footer__copiright {
+		justify-self: auto;
+	}
+
+	.footer__title {
+		text-align: start;
+	}
+
+	.footer__contacts {
+		justify-self: auto;
+	}
 }

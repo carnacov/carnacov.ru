@@ -52,6 +52,10 @@
 
 @import url('blocks/contacts/index.css');
 
+/* Portfolio */
+
+@import url('blocks/portfolio/index.css');
+
 /* Footer */
 
 @import url('blocks/footer/index.css');

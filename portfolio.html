@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Борис Карнаков - Фронтенд Разработчик</title>
+    <title>Борис Карнаков - Портфолио</title>
 	<link rel="preload" href="/fonts/MicrosoftSansSerif.woff2" as="font">
 	<link type="image/x-icon" href="/images/icons/favicon.png" rel="shortcut icon">
   	<link type="Image/x-icon" href="/images/icons/favicon.png" rel="icon">
@@ -22,9 +22,9 @@
 
 			<nav class="nav">
 				<ul class="list-reset nav__list">
-					<li class="nav__item"><a href="/index.html" class="nav__link nav__link-active">Обо мне</a></li>
+					<li class="nav__item"><a href="/index.html" class="nav__link">Обо мне</a></li>
 					<li class="nav__item"><a class="nav__link-inactive">Проекты</a></li>
-					<li class="nav__item"><a href="/portfolio.html" class="nav__link">Портфолио</a></li>
+					<li class="nav__item"><a href="/portfolio.html" class="nav__link nav__link-active">Портфолио</a></li>
 				</ul>
 			</nav>
 
@@ -53,98 +53,43 @@
 
 	<main class="main">
 		<div class="container main__container">
-			<section class="section about">
-				<p class="list-reset about__title-sub">Привет, меня зовут</p>
-				<h1 class="list-reset main__title">Борис Карнаков</h1>
+			<article class="portfolio">
+				<h1 class="list-reset main__title">Портфолио</h1>
 
-				<div class="about__sub">
-					<picture class="about__picture">
-						<source type="image/webp" srcset="/images/photo@1x.webp 1x, /images/photo@2x.webp 2x">
-						<source type="image/avif" srcset="/images/photo@1x.avif 1x, /images/photo@2x.avif 2x">
-						<img class="about__picture-img" src="/images/photo@1x.jpg" srcset="/images/photo@2x.jpg 2x" width="450" height="389" fetchpriority="high" alt="Портрет на цветном фоне">
+				<section class="portfolio__section evklid">
+					<picture class="portfolio__section-picture">
+						<source type="image/webp" srcset="/images/portfolio/evklid@1x.webp 1x, /images/portfolio/evklid@2x.webp 2x">
+						<source type="image/avif" srcset="/images/portfolio/evklid@1x.avif 1x, /images/portfolio/evklid@2x.avif 2x">
+						<img class="portfolio__section-img" src="/images/portfolio/evklid@1x.jpg" srcset="/images/portfolio/evklid@2x.jpg 2x" width="540" height="322" fetchpriority="high" alt="Главная страница сайта Евклид - Проектные системы">
 					</picture>
 
-					<div class="about__sub-container">
-						<h2 class="list-reset about__sub-title">Я фронтент разработчик Люблю верстать сайты, рыбалку, книги, фильмы</h2>
-						<p class="list-reset about__sub-text">Здесь вы найдете информацию обо мне, моих проектах, портфолио и ссылки</p>
-					</div>
-				</div>
-			</section>
+					<h2 class="portfolio__section-title list-reset">Евклид - Проектные системы</h2>
 
-			<div class="main__container-sub">
-				<section class="section skills">
-					<h2 class="list-reset section__title">Навыки</h2>
-					<p class="list-reset section__title-sub">Некоторые из моих любимых технологий, тем или инструментов, с которыми я работал</p>
-
-					<table class="skills__table">
-						<tbody>
-							<tr class="skills__table-row">
-								<td class="skills__table-column">Editorconfig</td>
-								<td class="skills__table-column">HTML</td>
-							</tr>
-
-							<tr class="skills__table-row">
-								<td class="skills__table-column">Доступность</td>
-								<td class="skills__table-column">CSS</td>
-							</tr>
-
-							<tr class="skills__table-row">
-								<td class="skills__table-column">Кроссбраузерность</td>
-								<td class="skills__table-column">JavaScript</td>
-							</tr>
-
-							<tr class="skills__table-row">
-								<td class="skills__table-column">БЭМ</td>
-								<td class="skills__table-column">Mobile first</td>
-							</tr>
-
-							<tr class="skills__table-row">
-								<td class="skills__table-column">Адаптивность</td>
-								<td class="skills__table-column"></td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section class="section works">
-					<h2 class="list-reset section__title">Работа</h2>
-					<p class="list-reset section__title-sub">Я только начинаю свой путь разработчика, допишу строчку в резюме после трудоустройства</p>
-
-					<ul class="list-reset works__list">
-						<li class="works__item">
-							<span class="works__item-time"><time datetime="2024">2024 &mdash;</time></span>
-							<span class="works__item-co">SkillBox</span>
-							<span class="works__item-post">Студент</span>
-						</li>
+					<ul class="portfolio__section-list list-reset">
+						<li class="portfolio__section-item"><a href="https://carnacov.github.io/evklid/" class="portfolio__section-link" target="_blank">Демо</a></li>
+						<li class="portfolio__section-item"><a href="https://github.com/carnacov/evklid" class="portfolio__section-link" target="_blank">Коды GitHub</a></li>
 					</ul>
+
+					<p class="portfolio__section-stack list-reset">HTML, CSS, JavaScript, Editorconfig, Доступность, Кроссбраузерность, БЭМ, Адаптивность.</p>
 				</section>
 
-				<section class="section contacts">
-					<h2 class="list-reset section__title">Контакты</h2>
-					<p class="list-reset section__title-sub">Вы можете связаться со мной по электронной почте или в telegram</p>
+				<section class="portfolio__section blanchard">
+					<picture class="portfolio__section-picture">
+						<source type="image/webp" srcset="/images/portfolio/blanchard@1x.webp 1x, /images/portfolio/blanchard@2x.webp 2x">
+						<source type="image/avif" srcset="/images/portfolio/blanchard@1x.avif 1x, /images/portfolio/blanchard@2x.avif 2x">
+						<img class="portfolio__section-img" src="/images/portfolio/blanchard@1x.jpg" srcset="/images/portfolio/blanchard@2x.jpg 2x" width="540" height="322" fetchpriority="high" alt="Главная страница сайта Blanchard - Художественная галерея">
+					</picture>
 
-					<ul class="list-reset contacts__list">
-						<li class="contacts__item">
-							<a href="https://t.me/carnacov" target="_blank" class="contacts__link">
-								<svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M30.1226 0.220707C30.1226 0.220707 33.1689 -0.861435 32.915 1.76663C32.8304 2.84878 32.0688 6.63628 31.4765 10.733L29.4457 22.8685C29.4457 22.8685 29.2765 24.6463 27.7533 24.9555C26.2301 25.2646 23.9455 23.8733 23.5224 23.5641C23.1838 23.3323 17.176 19.8539 15.0604 18.1534C14.4681 17.6896 13.7912 16.7621 15.1451 15.6799L24.03 7.95035C25.0455 7.02278 26.0609 4.8585 21.83 7.48657L9.98338 14.8297C9.98338 14.8297 8.62948 15.6026 6.09096 14.907L0.590718 13.3611C0.590718 13.3611 -1.44013 12.2016 2.02924 11.0421C10.4911 7.40921 20.8993 3.699 30.1226 0.220707Z" fill=""></path>
-								</svg>
+					<h2 class="portfolio__section-title list-reset">Blanchard - Художественная галерея</h2>
 
-								t.me/carnacov
-							</a>
-						</li>
-						<li class="contacts__item">
-							<a href="mailto:hi@carnacov.ru" target="_blank" class="contacts__link">
-								<svg width="33" height="21" viewBox="0 0 33 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.447849 2.0475C9.81392e-08 2.85 0 3.9 0 6V15C0 17.1 9.81392e-08 18.15 0.447849 18.9525C0.842837 19.6579 1.47281 20.2313 2.24748 20.5905C3.12835 21 4.28091 21 6.58601 21H26.344C28.6491 21 29.8017 21 30.6826 20.5905C31.4566 20.231 32.0859 19.6577 32.4805 18.9525C32.93 18.15 32.93 17.1 32.93 15V6C32.93 3.9 32.93 2.85 32.4805 2.0475C32.0863 1.34176 31.4569 0.767842 30.6826 0.408C29.8017 -2.68221e-07 28.6491 0 26.344 0H6.58601C4.28091 0 3.12835 -2.68221e-07 2.24748 0.408C1.47255 0.767587 0.842557 1.34153 0.447849 2.0475ZM4.35829 3H28.5718C28.7485 2.9998 28.9207 3.05145 29.0627 3.14729C29.2048 3.24313 29.3092 3.37809 29.3605 3.53219C29.4119 3.68629 29.4074 3.85135 29.3478 4.00296C29.2882 4.15456 29.1766 4.28466 29.0295 4.374L17.3805 11.472C17.1096 11.6371 16.7909 11.7252 16.465 11.7252C16.1391 11.7252 15.8205 11.6371 15.5496 11.472L3.90056 4.374C3.75349 4.28466 3.64189 4.15456 3.58227 4.00296C3.52265 3.85135 3.51818 3.68629 3.56952 3.53219C3.62085 3.37809 3.72527 3.24313 3.86733 3.14729C4.00938 3.05145 4.18152 2.9998 4.35829 3Z" fill=""></path>
-								</svg>
-
-								hi@carnacov.ru
-							</a>
-						</li>
+					<ul class="portfolio__section-list list-reset">
+						<li class="portfolio__section-item"><a href="https://carnacov.github.io/blanchard/" class="portfolio__section-link" target="_blank">Демо</a></li>
+						<li class="portfolio__section-item"><a href="https://github.com/carnacov/blanchard" class="portfolio__section-link" target="_blank">Коды GitHub</a></li>
 					</ul>
+
+					<p class="portfolio__section-stack list-reset">HTML, CSS, JavaScript, Editorconfig, Доступность, Кроссбраузерность, БЭМ, Адаптивность.</p>
 				</section>
-			</div>
+			</article>
 		</div>
 	</main>
 
@@ -157,7 +102,33 @@
 
 				carnacov.ru
 			</a>
-			<p class="footer__copiright">carnacov.ru ©  2025 / задизайнено и заверсталено мной.</p>
+
+			<div class="footer__contacts contacts">
+				<h2 class="list-reset footer__title">Контакты</h2>
+
+				<ul class="list-reset contacts__list">
+					<li class="contacts__item">
+						<a href="https://t.me/carnacov" target="_blank" class="contacts__link">
+							<svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M30.1226 0.220707C30.1226 0.220707 33.1689 -0.861435 32.915 1.76663C32.8304 2.84878 32.0688 6.63628 31.4765 10.733L29.4457 22.8685C29.4457 22.8685 29.2765 24.6463 27.7533 24.9555C26.2301 25.2646 23.9455 23.8733 23.5224 23.5641C23.1838 23.3323 17.176 19.8539 15.0604 18.1534C14.4681 17.6896 13.7912 16.7621 15.1451 15.6799L24.03 7.95035C25.0455 7.02278 26.0609 4.8585 21.83 7.48657L9.98338 14.8297C9.98338 14.8297 8.62948 15.6026 6.09096 14.907L0.590718 13.3611C0.590718 13.3611 -1.44013 12.2016 2.02924 11.0421C10.4911 7.40921 20.8993 3.699 30.1226 0.220707Z" fill=""></path>
+							</svg>
+
+							t.me/carnacov
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="mailto:hi@carnacov.ru" target="_blank" class="contacts__link">
+							<svg width="33" height="21" viewBox="0 0 33 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.447849 2.0475C9.81392e-08 2.85 0 3.9 0 6V15C0 17.1 9.81392e-08 18.15 0.447849 18.9525C0.842837 19.6579 1.47281 20.2313 2.24748 20.5905C3.12835 21 4.28091 21 6.58601 21H26.344C28.6491 21 29.8017 21 30.6826 20.5905C31.4566 20.231 32.0859 19.6577 32.4805 18.9525C32.93 18.15 32.93 17.1 32.93 15V6C32.93 3.9 32.93 2.85 32.4805 2.0475C32.0863 1.34176 31.4569 0.767842 30.6826 0.408C29.8017 -2.68221e-07 28.6491 0 26.344 0H6.58601C4.28091 0 3.12835 -2.68221e-07 2.24748 0.408C1.47255 0.767587 0.842557 1.34153 0.447849 2.0475ZM4.35829 3H28.5718C28.7485 2.9998 28.9207 3.05145 29.0627 3.14729C29.2048 3.24313 29.3092 3.37809 29.3605 3.53219C29.4119 3.68629 29.4074 3.85135 29.3478 4.00296C29.2882 4.15456 29.1766 4.28466 29.0295 4.374L17.3805 11.472C17.1096 11.6371 16.7909 11.7252 16.465 11.7252C16.1391 11.7252 15.8205 11.6371 15.5496 11.472L3.90056 4.374C3.75349 4.28466 3.64189 4.15456 3.58227 4.00296C3.52265 3.85135 3.51818 3.68629 3.56952 3.53219C3.62085 3.37809 3.72527 3.24313 3.86733 3.14729C4.00938 3.05145 4.18152 2.9998 4.35829 3Z" fill=""></path>
+							</svg>
+
+							hi@carnacov.ru
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<p class="footer__copiright">carnacov.ru ©  2025 / задизайнено и заверсталено мной</p>
 		</div>
 	</footer>
 </body>
