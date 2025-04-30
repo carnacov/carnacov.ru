@@ -1,7 +1,7 @@
 /* Base */
 
 .stages {
-	background-color: var(--color-creator-lighter);
+	background-color: var(--color-creator-secondary);
 }
 
 .stages__container {

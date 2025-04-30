@@ -34,7 +34,7 @@
 	padding: 10px 25px;
 	border-radius: 12px;
 	border: solid 1px var(--color-creator-primary);
-	color: var(--color-text-primary);
+	color: var(--color-button-primary);
 	font-weight: 600;
 	display: block;
 }

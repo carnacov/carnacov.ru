@@ -4,6 +4,7 @@
 	--color-black: #222E3E;
 	--color-white: #ffffff;
 	--color-lighter: #69737D;
-	--color-creator-light: #8CD193;
-	--color-creator-lighter: #F3FAF4;
+	--color-creator-dark: #8CD193;
+	--color-creator-light: #F3FAF4;
+	--color-button-primary: #222E3E;
 }
