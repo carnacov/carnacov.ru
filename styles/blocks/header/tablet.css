@@ -1,9 +1,6 @@
 /* Desktop */
 
 @media (width <= 992px ) {
-	.header {
-		margin-bottom: 30px;
-	}
 
 	.header__container {
 		flex-direction: row;

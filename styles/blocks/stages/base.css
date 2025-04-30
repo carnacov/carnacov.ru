@@ -1,0 +1,51 @@
+/* Base */
+
+.stages {
+	background-color: var(--color-creator-lighter);
+}
+
+.stages__container {
+	display: grid;
+	row-gap: 80px;
+}
+
+.stages__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	column-gap: 50px;
+	row-gap: 50px;
+}
+
+.stages__item {
+	background-image: url(/images/icons/stages.svg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-top: 65px;
+}
+
+.stages__article {
+	display: grid;
+	row-gap: 25px;
+}
+
+.stages__title {
+	font-weight: 600;
+}
+
+.stages__link {
+	color: var(--color-text-secondary);
+	background-image: url(/images/icons/arrow__right.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: fit-content;
+	padding-right: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.stages__link:hover {
+	color: var(--color-creator-primary);
+	transition: all 0.2s linear;
+}
+

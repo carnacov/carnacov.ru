@@ -1,0 +1,11 @@
+/* Mobile */
+
+@media (width <= 540px) {
+
+}
+
+@media (width <= 768px) {
+	.stages__list {
+		grid-template-columns: 1fr;
+	}
+}

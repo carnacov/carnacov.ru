@@ -1,5 +1,7 @@
 /* Mobile */
 
 @media (width <= 540px) {
-
+	.footer__container {
+		row-gap: 25px;
+	}
 }

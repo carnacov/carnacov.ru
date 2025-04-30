@@ -1,0 +1,7 @@
+/* Mobile */
+
+@media (width <= 540px) {
+	.hero__title {
+		font-size: 40px;
+	}
+}

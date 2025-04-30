@@ -1,0 +1,7 @@
+/* Desktop */
+
+@media (width <= 992px ) {
+	.stages__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

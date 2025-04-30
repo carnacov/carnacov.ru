@@ -1,0 +1,8 @@
+/* Mobile */
+
+@media (width <= 540px) {
+	.portfolio__list {
+		column-gap: 30px;
+		justify-content: center;
+	}
+}

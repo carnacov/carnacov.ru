@@ -1,0 +1,7 @@
+/* Mobile */
+
+@media (width <= 540px) {
+	.services__table-price {
+		font-size: 24px;
+	}
+}

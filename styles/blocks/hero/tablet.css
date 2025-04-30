@@ -1,0 +1,15 @@
+/* Desktop */
+
+@media (width <= 992px ) {
+	.hero__container {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(5, auto-fit);
+		column-gap: 0px;
+	}
+
+	.hero__picture {
+		grid-row: 1;
+		grid-column: 1 / 1;
+		justify-self: center;
+	}
+}

@@ -36,21 +36,21 @@
 
 @import url('blocks/main/index.css');
 
-/* About */
+/* Hero */
 
-@import url('blocks/about/index.css');
+@import url('blocks/hero/index.css');
 
-/* Skills */
+/* Stages */
 
-@import url('blocks/skills/index.css');
+@import url('blocks/stages/index.css');
 
-/* Works */
+/* Services */
 
-@import url('blocks/works/index.css');
+@import url('blocks/services/index.css');
 
-/* Contacts */
+/* Portfolio */
 
-@import url('blocks/contacts/index.css');
+@import url('blocks/portfolio/index.css');
 
 /* Footer */
 

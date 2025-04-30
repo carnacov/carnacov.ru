@@ -1,0 +1,74 @@
+/* Base */
+
+.services__container {
+	display: grid;
+}
+
+.services__title {
+	justify-self: center;
+}
+
+.services__sub {
+	justify-self: center;
+}
+
+.services__table {
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.services__table-row {
+    border-bottom: 1px solid var(--color-text-primary);
+}
+
+.services__table-column {
+    border-right: 1px solid var(--color-text-primary);
+	padding: 15px;
+}
+
+.services__table-column--sub {
+	text-align: center;
+}
+
+.services__table-list {
+	display: grid;
+	row-gap: 15px;
+}
+
+.services__table-title {
+	font-weight: 400;
+}
+
+.services__table-price {
+	font-size: 56px;
+}
+
+.services__table-fees {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.services__table-trand {
+	font-size: 16px;
+}
+
+.services__table-button {
+	padding: 10px 25px;
+	border-radius: 12px;
+	border: solid 1px var(--color-creator-primary);
+	color: var(--color-text-primary);
+	background-color: var(--color-creator-primary);
+	font-weight: 600;
+	display: block;
+	text-align: center;
+}
+
+.services__table-button:hover {
+	transition: all 0.2s linear;
+	background-color: var(--color-text-secondary);
+	border: solid 1px var(--color-text-secondary);
+	color: var(--color-white);
+}

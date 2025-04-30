@@ -1,0 +1,57 @@
+/* Base */
+
+.hero__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, auto-fit);
+	column-gap: 80px;
+}
+
+.hero__title {
+	font-size: 56px;
+	font-weight: 600;
+}
+
+.hero__picture {
+	grid-row: 1 / 4;
+	grid-column: 2 / 2;
+}
+
+.hero__picture-img {
+	border-radius: 8px;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.hero__list {
+	display: flex;
+	flex-direction: row;
+	column-gap: 25px;
+}
+
+.hero__button {
+	padding: 10px 25px;
+	border-radius: 12px;
+	border: solid 1px var(--color-creator-primary);
+	color: var(--color-text-primary);
+	font-weight: 600;
+	display: block;
+}
+
+.hero__button:hover {
+	transition: all 0.2s linear;
+	background-color: var(--color-text-secondary);
+	border: solid 1px var(--color-text-secondary);
+	color: var(--color-white);
+}
+
+.hero__button-services {
+	background-color: var(--color-creator-primary);
+}
+
+.hero__button-contact {
+	color: var(--color-text-secondary);
+}
+
+

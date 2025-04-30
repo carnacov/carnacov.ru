@@ -7,9 +7,11 @@
 	<link rel="preload" href="/fonts/MicrosoftSansSerif.woff2" as="font">
 	<link type="image/x-icon" href="/images/icons/favicon.png" rel="shortcut icon">
   	<link type="Image/x-icon" href="/images/icons/favicon.png" rel="icon">
+	<link rel="stylesheet" href="/styles/global/swiper.min.css">
 	<link rel="stylesheet" href="/styles/index.css">
 	<link rel="stylesheet" href="/styles/light.css" media="(prefers-color-scheme: light)">
 	<link rel="stylesheet" href="/styles/dark.css" media="(prefers-color-scheme: dark)">
+
 </head>
 <body class="page__body">
 	<header class="header">
@@ -22,9 +24,9 @@
 
 			<nav class="nav">
 				<ul class="list-reset nav__list">
-					<li class="nav__item"><a href="#" class="nav__link nav__link-active">Обо мне</a></li>
-					<li class="nav__item"><a class="nav__link-inactive">Проекты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+					<li class="nav__item"><a href="#stages" class="nav__link">Этапы</a></li>
+					<li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+					<li class="nav__item"><a href="#portfolio" class="nav__link">Портфолио</a></li>
 				</ul>
 			</nav>
 
@@ -52,100 +54,204 @@
 	</header>
 
 	<main class="main">
-		<div class="container main__container">
-			<section class="section about">
-				<p class="list-reset about__title-sub">Привет, меня зовут</p>
-				<h1 class="list-reset about__title">Борис Карнаков</h1>
+			<section class="section hero">
+				<div class="container hero__container">
+					<h1 class="list-reset hero__title">Разработка и поддержка сайтов для малого/среднего бизнеса</h1>
+					<p class="list-reset section__sub">Предлагаею адаптивную, кроссбраузерную верстку сайта с фокусом на доступность и пользовательский опыт.  Верстка обеспечивает отличное отображение на любых устройствах. Чистый код гарантирует высокую производительность и легкость в поддержке. Кроме того, оптимизирую ваш сайт для поисковых систем, чтобы привлечь больше клиентов.</p>
+					<ul class="list-reset hero__list">
+						<li class="hero__item"><a href="" class="hero__button hero__button-services">Услуги</a></li>
+						<li class="hero__item"><a href="https://t.me/carnacov" class="hero__button hero__button-contact" target="_blank">Связаться</a></li>
+					</ul>
 
-				<div class="about__sub">
-					<picture class="about__picture">
+					<picture class="hero__picture">
 						<source type="image/webp" srcset="/images/photo@1x.webp 1x, /images/photo@2x.webp 2x">
 						<source type="image/avif" srcset="/images/photo@1x.avif 1x, /images/photo@2x.avif 2x">
-						<img class="about__picture-img" src="/images/photo@1x.jpg" srcset="/images/photo@2x.jpg 2x" width="450" height="389" fetchpriority="high" alt="Портрет на цветном фоне">
+						<img class="hero__picture-img" src="/images/photo@1x.jpg" srcset="/images/photo@2x.jpg 2x" width="616" height="640" fetchpriority="high" alt="Фотография в кофейне">
 					</picture>
-
-					<div class="about__sub-container">
-						<h2 class="list-reset about__sub-title">Я фронтент разработчик Люблю верстать сайты рыбалку, книги, фильмы</h2>
-						<p class="list-reset about__sub-text">Здесь вы найдете информацию обо мне, моих проектах, портфолио и ссылки</p>
-					</div>
 				</div>
 			</section>
 
-			<div class="main__container-sub">
-				<section class="section skills">
-					<h2 class="list-reset section__title">Навыки</h2>
-					<p class="list-reset section__title-sub">Некоторые из моих любимых технологий, тем или инструментов, с которыми я работал</p>
+			<section class="section stages" id="stages">
+				<div class="container stages__container">
+					<h2 class="list-reset section__title stages__title">Этапы разработки сайта до успешного запуска вашего проекта</h2>
 
-					<table class="skills__table">
+					<ul class="list-reset stages__list">
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Пошаговое руководство по созданию эффективного веб-сайта для бизнеса</h3>
+								<p class="list-reset section__sub stages__sub">Мы начинаем с тщательного планирования, чтобы понять ваши потребности и цели.</p>
+								<a href="" class="stages__link">Читать</a>
+							</article>
+						</li>
+
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Дизайн: создание привлекательного и функционального интерфейса для пользователей</h3>
+								<p class="list-reset section__sub stages__sub">Если у вас еще нет дизайна, его необходимо разработать. Я не занимаюсь дизайном сайтов, могу порекомендовать пару хороших специалистов.</p>
+								<a href="" class="stages__link">Выбрать дизайнера</a>
+							</article>
+						</li>
+
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Разработка: реализация дизайна с использованием HTML и CSS</h3>
+								<p class="list-reset section__sub stages__sub">Пишу чистый и эффективный код, чтобы обеспечить высокую производительность и доступность сайта.</p>
+								<a href="" class="stages__link">Связаться</a>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section services" id="services">
+				<div class="container services__container">
+					<h2 class="list-reset section__title services__title">Услуги</h2>
+					<p class="list-reset section__sub services__sub">Здесь вы можете выбрать подходящий план для вашего проекта.</p>
+
+					<table class="services__table">
 						<tbody>
-							<tr class="skills__table-row">
-								<td class="skills__table-column">Editorconfig</td>
-								<td class="skills__table-column">HTML</td>
+							<tr class="services__table-row">
+								<td class="services__table-column"></td>
+								<td class="services__table-column">
+									<ul class="list-reset services__table-list">
+										<li class="services__table-item">
+											<h3 class="list-reset services__table-title">Базовый</h3>
+										</li>
+
+										<li class="services__table-item services__table-price" data-label="Цена">4900</li>
+										<li class="services__table-item services__table-fees" data-label="Услуга">За экран</li>
+										<li class="services__table-item services__table-trand" data-label="Для кого">Подходит для небольших сайтов</li>
+										<li class="services__table-item"><a href="https://t.me/carnacov" target="_blank" class="services__table-button">Заказать</a></li>
+									</ul>
+								</td>
+								<td class="services__table-column">
+									<ul class="list-reset services__table-list">
+										<li class="services__table-item">
+											<h3 class="list-reset services__table-title">Лендинг</h3>
+										</li>
+
+										<li class="services__table-item services__table-price" data-label="Цена">14900</li>
+										<li class="services__table-item services__table-fees" data-label="Услуга">За 4 экрана, свыше + 4490 рублей за каждый экран</li>
+										<li class="services__table-item services__table-trand" data-label="Для кого">Оптимально для средних проектов</li>
+										<li class="services__table-item"><a href="https://t.me/carnacov" target="_blank" class="services__table-button">Заказать</a></li>
+									</ul>
+								</td>
 							</tr>
 
-							<tr class="skills__table-row">
-								<td class="skills__table-column">Доступность</td>
-								<td class="skills__table-column">CSS</td>
+							<tr class="services__table-row">
+								<td class="services__table-column" colspan="3">Базовые функции</td>
 							</tr>
 
-							<tr class="skills__table-row">
-								<td class="skills__table-column">Кроссбраузерность</td>
-								<td class="skills__table-column">JavaScript</td>
+							<tr class="services__table-row">
+								<td class="services__table-column">Количество экранов</td>
+								<td class="services__table-column services__table-column--sub" data-label="Базовый">От одного экрана</td>
+								<td class="services__table-column services__table-column--sub" data-label="Лендинг">От четырех экранов</td>
 							</tr>
 
-							<tr class="skills__table-row">
-								<td class="skills__table-column">БЭМ</td>
-								<td class="skills__table-column">Mobile first</td>
+							<tr class="services__table-row">
+								<td class="services__table-column">SEO оптимизация</td>
+								<td class="services__table-column services__table-column--sub" data-label="Базовый">
+									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
+									</svg>
+								</td>
+
+								<td class="services__table-column services__table-column--sub" data-label="Лендинг">
+									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
+									</svg>
+								</td>
 							</tr>
 
-							<tr class="skills__table-row">
-								<td class="skills__table-column">Адаптивность</td>
-								<td class="skills__table-column"></td>
+							<tr class="services__table-row">
+								<td class="services__table-column">Обновление и поддержка</td>
+								<td class="services__table-column services__table-column--sub" data-label="Базовый">
+									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
+									</svg>
+								</td>
+
+								<td class="services__table-column services__table-column--sub" data-label="Лендинг">
+									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
+									</svg>
+								</td>
+							</tr>
+
+							<tr class="services__table-row">
+								<td class="services__table-column">Оптимизация скорости загрузки</td>
+								<td class="services__table-column services__table-column--sub" colspan="2" data-label="Базовый, Лендинг">От 90%</td>
+							</tr>
+
+							<tr class="services__table-row">
+								<td class="services__table-column">Многоязычность</td>
+								<td class="services__table-column services__table-column--sub" data-label="Базовый">Не включено в тариф</td>
+								<td class="services__table-column services__table-column--sub" data-label="Лендинг">
+									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
+									</svg>
+								</td>
 							</tr>
 						</tbody>
 					</table>
-				</section>
+				</div>
+			</section>
 
-				<section class="section works">
-					<h2 class="list-reset section__title">Работа</h2>
-					<p class="list-reset section__title-sub">Я только начинаю свой путь разработчика, допишу строчку в резюме после трудоустройства</p>
+			<section class="section portfolio" id="portfolio">
+				<div class="container portfolio__container">
+					<h2 class="list-reset section__title portfolio__title">Портфолио</h2>
+						<!-- Slider main container -->
+							<div class="image-slider swiper-container">
+								<!-- враппер -->
+								<div class="image-slider__wrapper swiper-wrapper">
+									<div class="image-slider__slide swiper-slide">
+										<picture class="portfolio__picture">
+											<!-- 540 -->
+											<source srcset="/images/evklid@540@1x.webp 1x, /images/evklid@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
+											<source srcset="/images/evklid@540@1x.avif 1x, /images/evklid@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
+											<source srcset="/images/evklid@540@1x.jpg 1x, /images/evklid@540@2x.jpg 2x" media="(max-width: 540px)">
+											<!-- 992 -->
+											<source srcset="/images/evklid@992@1x.webp 1x, /images/evklid@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
+											<source srcset="/images/evklid@992@1x.avif 1x, /images/evklid@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
+											<source srcset="/images/evklid@992@1x.jpg 1x, /images/evklid@992@2x.jpg 2x" media="(max-width: 992px)">
+											<!-- 1920 -->
+											<source type="image/webp" srcset="/images/evklid@1920@1x.webp 1x, /images/evklid@1920@2x.webp 2x">
+											<source type="image/avif" srcset="/images/evklid@1920@1x.avif 1x, /images/evklid@1920@2x.avif 2x">
+											<img class="portfolio__picture-img" src="/images/evklid@1920@1x.jpg" srcset="/images/evklid@1920@2x.jpg 2x" fetchpriority="high" alt="Главная страница сайта Евклид">
+										</picture>
 
-					<ul class="list-reset works__list">
-						<li class="works__item">
-							<span class="works__item-time"><time datetime="2024">2024 &mdash;</time></span>
-							<span class="works__item-co">SkillBox</span>
-							<span class="works__item-post">Студент</span>
-						</li>
-					</ul>
-				</section>
+										<ul class="list-reset portfolio__list">
+											<li class="list-reset portfolio__item"><a href="https://carnacov.github.io/evklid/" class="portfolio__link" target="_blank">Демо</a></li>
+											<li class="list-reset portfolio__item"><a href="https://github.com/carnacov/evklid" class="portfolio__link" target="_blank">Коды GitHub</a></li>
+										</ul>
+									</div>
+									<div class="swiper-slide">
+										<picture class="portfolio__picture">
+											<!-- 540 -->
+											<source srcset="/images/blanchard@540@1x.webp 1x, /images/blanchard@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
+											<source srcset="/images/blanchard@540@1x.avif 1x, /images/blanchard@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
+											<source srcset="/images/blanchard@540@1x.jpg 1x, /images/blanchard@540@2x.jpg 2x" media="(max-width: 540px)">
+											<!-- 992 -->
+											<source srcset="/images/blanchard@992@1x.webp 1x, /images/blanchard@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
+											<source srcset="/images/blanchard@992@1x.avif 1x, /images/blanchard@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
+											<source srcset="/images/blanchard@992@1x.jpg 1x, /images/blanchard@992@2x.jpg 2x" media="(max-width: 992px)">
+											<!-- 1920 -->
+											<source type="image/webp" srcset="/images/blanchard@1920@1x.webp 1x, /images/blanchard@1920@2x.webp 2x">
+											<source type="image/avif" srcset="/images/blanchard@1920@1x.avif 1x, /images/blanchard@1920@2x.avif 2x">
+											<img class="portfolio__picture-img" src="/images/blanchard@1920@1x.jpg" srcset="/images/blanchard@1920@2x.jpg 2x" fetchpriority="high" alt="Главная страница сайта Евклид">
+										</picture>
 
-				<section class="section contacts">
-					<h2 class="list-reset section__title">Контакты</h2>
-					<p class="list-reset section__title-sub">Вы можете связаться со мной по электронной почте или в telegram</p>
-
-					<ul class="list-reset contacts__list">
-						<li class="contacts__item">
-							<a href="https://t.me/carnacov" target="_blank" class="contacts__link">
-								<svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M30.1226 0.220707C30.1226 0.220707 33.1689 -0.861435 32.915 1.76663C32.8304 2.84878 32.0688 6.63628 31.4765 10.733L29.4457 22.8685C29.4457 22.8685 29.2765 24.6463 27.7533 24.9555C26.2301 25.2646 23.9455 23.8733 23.5224 23.5641C23.1838 23.3323 17.176 19.8539 15.0604 18.1534C14.4681 17.6896 13.7912 16.7621 15.1451 15.6799L24.03 7.95035C25.0455 7.02278 26.0609 4.8585 21.83 7.48657L9.98338 14.8297C9.98338 14.8297 8.62948 15.6026 6.09096 14.907L0.590718 13.3611C0.590718 13.3611 -1.44013 12.2016 2.02924 11.0421C10.4911 7.40921 20.8993 3.699 30.1226 0.220707Z" fill=""></path>
-								</svg>
-
-								t.me/carnacov
-							</a>
-						</li>
-						<li class="contacts__item">
-							<a href="mailto:hi@carnacov.ru" target="_blank" class="contacts__link">
-								<svg width="33" height="21" viewBox="0 0 33 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.447849 2.0475C9.81392e-08 2.85 0 3.9 0 6V15C0 17.1 9.81392e-08 18.15 0.447849 18.9525C0.842837 19.6579 1.47281 20.2313 2.24748 20.5905C3.12835 21 4.28091 21 6.58601 21H26.344C28.6491 21 29.8017 21 30.6826 20.5905C31.4566 20.231 32.0859 19.6577 32.4805 18.9525C32.93 18.15 32.93 17.1 32.93 15V6C32.93 3.9 32.93 2.85 32.4805 2.0475C32.0863 1.34176 31.4569 0.767842 30.6826 0.408C29.8017 -2.68221e-07 28.6491 0 26.344 0H6.58601C4.28091 0 3.12835 -2.68221e-07 2.24748 0.408C1.47255 0.767587 0.842557 1.34153 0.447849 2.0475ZM4.35829 3H28.5718C28.7485 2.9998 28.9207 3.05145 29.0627 3.14729C29.2048 3.24313 29.3092 3.37809 29.3605 3.53219C29.4119 3.68629 29.4074 3.85135 29.3478 4.00296C29.2882 4.15456 29.1766 4.28466 29.0295 4.374L17.3805 11.472C17.1096 11.6371 16.7909 11.7252 16.465 11.7252C16.1391 11.7252 15.8205 11.6371 15.5496 11.472L3.90056 4.374C3.75349 4.28466 3.64189 4.15456 3.58227 4.00296C3.52265 3.85135 3.51818 3.68629 3.56952 3.53219C3.62085 3.37809 3.72527 3.24313 3.86733 3.14729C4.00938 3.05145 4.18152 2.9998 4.35829 3Z" fill=""></path>
-								</svg>
-
-								hi@carnacov.ru
-							</a>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</div>
+										<ul class="list-reset portfolio__list">
+											<li class="list-reset portfolio__item"><a href="https://carnacov.github.io/blanchard/" class="portfolio__link" target="_blank">Демо</a></li>
+											<li class="list-reset portfolio__item"><a href=" https://github.com/carnacov/blanchard" class="portfolio__link" target="_blank">Коды GitHub</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- кнопки пагинации -->
+								<div class="swiper-pagination"></div>
+							</div>
+					</div>
+			</section>
 	</main>
 
 	<footer class="footer">
@@ -157,8 +263,12 @@
 
 				carnacov.ru
 			</a>
+			<p class="footer__title">Разработка и поддержка сайтов с фокусом на пользовательский опыт для малого/среднего бизнеса</p>
 			<p class="footer__copiright">carnacov.ru ©  2025 / задизайнено и заверсталено мной.</p>
 		</div>
 	</footer>
+
+	<script src="/js/swiper.min.js"></script>
+	<script src="/js/script.js"></script>
 </body>
 </html>

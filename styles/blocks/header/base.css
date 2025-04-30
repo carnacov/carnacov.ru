@@ -2,10 +2,6 @@
 
 /* Header */
 
-.header {
-	margin-bottom: 50px;
-}
-
 .header__container {
 	display: flex;
 	justify-content: space-between;

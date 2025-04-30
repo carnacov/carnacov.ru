@@ -7,15 +7,6 @@
 	margin-bottom: 100px;
 }
 
-.about__title {
-	color: var(--color-text-primary);
-	font-size: 64px;
-	font-weight: normal;
-	text-transform: uppercase;
-	margin-bottom: 50px;
-	align-self: flex-start;
-}
-
 .about__title-sub {
 	color: var(--color-text-secondary);
 	align-self: flex-start;

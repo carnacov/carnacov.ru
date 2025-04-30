@@ -7,8 +7,8 @@
 }
 
 .nav__link {
-	color: var(--color-text-primary);
-	font-weight: 600;
+	color: var(--color-text-secondary);
+	font-weight: 500;
 }
 
 .nav__link:hover {
@@ -17,15 +17,15 @@
 }
 
 .nav__link-active {
-	color: var(--color-creator-secondary);
+	color: var(--color-creator-primary);
 }
 
 .nav__link-active:hover {
-	color: var(--color-text-primary);
+	color: var(--color-text-secondary);
 	transition: all 0.2s linear;
 }
 
 .nav__link-inactive {
-	color: var(--color-text-secondary);
+	color: var(--color-text-primary);
 	font-weight: 600;
 }

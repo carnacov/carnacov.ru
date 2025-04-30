@@ -1,3 +1,12 @@
+// Slider
+
+new Swiper('.image-slider', {
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
+
 // Burger
 
 const burger = document?.querySelector('[data-burger]');

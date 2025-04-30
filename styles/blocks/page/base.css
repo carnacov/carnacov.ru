@@ -5,7 +5,7 @@
 	color: var(--color-text-primary);
 	font-family: system-ui, sans-serif;
 	font-size: 18px;
-	line-height: 1;
+	line-height: 1
 }
 
 a, u, li{
@@ -28,4 +28,5 @@ a, u, li{
 	margin: 0 auto;
 	padding: 0 50px;
 	max-width: 1230px;
+	row-gap: 25px;
 }

@@ -1,5 +1,7 @@
 /* Mobile */
 
 @media (width <= 540px) {
-
+	.section__title {
+		font-size: 32px;
+	}
 }
