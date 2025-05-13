@@ -1,0 +1,32 @@
+/* Base */
+
+.guide__title {
+	font-size: 56px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.guide__sub {
+	line-height: 150%;
+}
+
+.section__pre {
+	font-style: italic;
+}
+
+.guide__section {
+	display: grid;
+	grid-template-rows: repeat(auto-fit);
+	row-gap: 15px;
+}
+
+.section__sub {
+	row-gap: 10px;
+}
+
+.section__list {
+	display: grid;
+	grid-template-rows: repeat(auto-fit);
+	row-gap: 10px;
+}
+

@@ -1,7 +1,7 @@
 /* Base */
 
 .portfolio {
-	background-color: var(--color-creator-secondary);
+	background-color: var(--color-back-secondary);
 }
 
 .portfolio__container {
@@ -29,7 +29,7 @@
 	padding: 10px 25px;
 	border-radius: 12px;
 	border: solid 1px var(--color-creator-primary);
-	color: var(--color-button-primary);
+	color: var(--color-text-primary);
 	background-color: var(--color-creator-primary);
 	font-weight: 600;
 	display: block;
@@ -38,34 +38,21 @@
 
 .portfolio__link:hover {
 	transition: all 0.2s linear;
-	background-color: var(--color-text-secondary);
+	background-color: var(--color-text-primary);
 	border: solid 1px var(--color-text-secondary);
-	color: var(--color-white);
+	color: var(--color-back-primary);
+}
+
+/* Slider */
+
+.image-slider {
+	padding: 30px 0 70px 0;
 }
 
 .swiper-container {
 	z-index: 0;
 	position: relative;
 	overflow: hidden;
-}
-
-.swiper-pagination {
-   z-index: 2;
-   color: #fff;
-   margin-bottom: 20px;
-}
-
-.swiper-pagination-bullet {
-   background-color: #fff;
-   width: 15px;
-   height: 15px;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets
-.swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-.swiper-pagination-bullet {
-   margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px);
 }
 
 .swiper-slide {
@@ -75,4 +62,10 @@
 	row-gap: 30px;
 }
 
+/* Slider Navigation */
 
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+	color: #000;
+	font-size: 80px;
+}

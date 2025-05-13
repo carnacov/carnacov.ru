@@ -52,6 +52,10 @@
 
 @import url('blocks/portfolio/index.css');
 
+/* Guide */
+
+@import url('blocks/guide/index.css');
+
 /* Footer */
 
 @import url('blocks/footer/index.css');

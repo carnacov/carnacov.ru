@@ -4,14 +4,8 @@
 	color-scheme: dark;
 
 	--color-back-primary: var(--color-black);
+	--color-back-secondary: var(--color-lighter);
 	--color-text-primary: var(--color-white);
 	--color-text-secondary: var(--color-lighter);
-	--color-creator-primary: var(--color-creator-light);
-	--color-creator-secondary: var(--color-creator-dark);
-}
-
-/* Footer */
-
-.footer {
-	border-top: solid 2px var(--color-text-primary);
+	--color-creator-primary: var(--color-creator-dark);
 }

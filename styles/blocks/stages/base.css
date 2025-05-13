@@ -1,7 +1,7 @@
 /* Base */
 
 .stages {
-	background-color: var(--color-creator-secondary);
+	background-color: var(--color-back-secondary);
 }
 
 .stages__container {
@@ -34,7 +34,7 @@
 }
 
 .stages__link {
-	color: var(--color-text-secondary);
+	color: var(--color-text-primary);
 	background-image: url(/images/icons/arrow__right.svg);
 	background-repeat: no-repeat;
 	background-position: right center;

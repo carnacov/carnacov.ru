@@ -4,8 +4,8 @@
 	color-scheme: light;
 
 	--color-back-primary: var(--color-white);
+	--color-back-secondary: var(--color-creator-light);
 	--color-text-primary: var(--color-black);
 	--color-text-secondary: var(--color-lighter);
 	--color-creator-primary: var(--color-creator-dark);
-	--color-creator-secondary: var(--color-creator-light);
 }
