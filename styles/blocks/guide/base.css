@@ -1,5 +1,9 @@
 /* Base */
 
+.guide {
+	padding-top: 50px;
+}
+
 .guide__title {
 	font-size: 56px;
 	font-weight: 600;
