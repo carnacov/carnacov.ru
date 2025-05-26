@@ -16,6 +16,8 @@
 
 .section__pre {
 	font-style: italic;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 .guide__section {
