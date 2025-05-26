@@ -5,7 +5,7 @@
 }
 
 .footer__container {
-	color: var(--color-text-secondary);
+	color: var(--color-white);
 	padding-top: 50px;
 	padding-bottom: 50px;
 	display: flex;
