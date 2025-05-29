@@ -55,17 +55,20 @@
 	overflow: hidden;
 }
 
-.swiper-slide {
-	display: grid;
-	justify-content: center;
-	width: 100%;
-	row-gap: 30px;
+.swiper-wrapper {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-snap-stop: normal;
+	column-gap: 50px;
+	transition: all 0.2s linear;
 }
 
-/* Slider Navigation */
-
-.image-slider .swiper-button-prev::after,
-.image-slider .swiper-button-next::after {
-	color: #000;
-	font-size: 80px;
+.swiper-slide {
+	min-width: 100%;
+	display: grid;
+	row-gap: 30px;
+	scroll-snap-align: start;
+	margin-bottom: 30px;
+	justify-content: center;
 }
