@@ -56,6 +56,10 @@
 
 @import url('blocks/guide/index.css');
 
+/* Certificates */
+
+@import url('blocks/certificates/index.css');
+
 /* Footer */
 
 @import url('blocks/footer/index.css');

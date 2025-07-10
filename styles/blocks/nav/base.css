@@ -4,6 +4,8 @@
 	display: flex;
 	column-gap: 90px;
 	text-transform: uppercase;
+	flex-wrap: wrap;
+	row-gap: 25px;
 }
 
 .nav__link {

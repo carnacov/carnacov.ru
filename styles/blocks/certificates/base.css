@@ -1,0 +1,29 @@
+/* Base */
+
+.certificates {
+	background-color: var(--color-back-secondary);
+	border-top: solid 8px var(--color-back-primary);
+}
+
+.certificates__container {
+	display: grid;
+	justify-content: center;
+}
+
+.certificates__title {
+	justify-self: center;
+}
+
+.certificates__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 50px;
+	justify-self: center;
+}
+
+.certificates__picture-img {
+	border-radius: 8px;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}

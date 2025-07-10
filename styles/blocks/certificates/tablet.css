@@ -1,0 +1,11 @@
+/* Desktop */
+
+@media (width <= 992px ) {
+	.certificates__list {
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 0;
+		row-gap: 50px;
+		justify-self: center;
+	}
+}
