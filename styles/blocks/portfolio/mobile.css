@@ -1,5 +1,20 @@
 /* Mobile */
 
 @media (width <= 540px) {
+	.portfolio__picture {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
+	.portfolio__picture-img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.portfolio__nav-btn {
+		width: 32px;
+		height: 32px;
+		font-size: 16px;
+	}
 }
