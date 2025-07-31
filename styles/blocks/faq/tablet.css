@@ -1,0 +1,14 @@
+/* Tablet */
+
+@media (width <= 992px ) {
+	.faq__container {
+		row-gap: 25px;
+		column-gap: 25px;
+	}
+
+	.faq__list {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 25px;
+		column-gap: 25px;
+	}
+}

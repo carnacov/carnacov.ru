@@ -3,10 +3,22 @@
 /* Header */
 
 .header__container {
-	display: flex;
+	display: grid;
+	grid-auto-flow: column;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	column-gap: 30px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--color-back-primary);
+    -webkit-overflow-scrolling: touch; /* Улучшает прокрутку на iOS */
+    touch-action: pan-y; /* Разрешает только вертикальную прокрутку */
 }

@@ -22,12 +22,21 @@
 				</svg>
 			</a>
 
-			<nav class="nav">
-				<ul class="list-reset nav__list">
-					<li class="nav__item"><a href="#stages" class="nav__link">Этапы</a></li>
-					<li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
-					<li class="nav__item"><a href="#portfolio" class="nav__link">Портфолио</a></li>
-					<li class="nav__item"><a href="#certificates" class="nav__link">Сертификаты</a></li>
+			<nav class="header__menu menu">
+				<button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+					<svg class="menu__icon" aria-hidden="true" width="32" height="32">
+						<use class="menu__icon-menu" href="./images/icons/sprite.svg#menu"></use>
+						<use class="menu__icon-cross" href="./images/icons/sprite.svg#cross"></use>
+					</svg>
+            	</button>
+
+				<ul class="list-reset menu__list" id="menu__list">
+					<li class="menu__item"><a href="#about" class="menu__link">Обо мне</a></li>
+					<li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+					<li class="menu__item"><a href="#stages" class="menu__link">Этапы</a></li>
+					<li class="menu__item"><a href="#portfolio" class="menu__link">Портфолио</a></li>
+					<li class="menu__item"><a href="#faq" class="menu__link">Вопросы</a></li>
+					<li class="menu__item"><a href="#certificates" class="menu__link">Сертификаты</a></li>
 				</ul>
 			</nav>
 
@@ -55,63 +64,52 @@
 	</header>
 
 	<main class="main">
-			<section class="section hero">
-				<div class="container hero__container">
-					<h1 class="list-reset hero__title">Разработка и поддержка сайтов для малого/среднего бизнеса</h1>
-					<p class="list-reset section__sub">Предлагаю адаптивную, кроссбраузерную верстку сайта с фокусом на доступность и пользовательский опыт.  Верстка обеспечивает отличное отображение на любых устройствах. Чистый код гарантирует высокую производительность и легкость в поддержке. Кроме того, оптимизирую ваш сайт для поисковых систем, чтобы привлечь больше клиентов.</p>
-					<ul class="list-reset hero__list">
-						<li class="hero__item"><a href="#services" class="hero__button hero__button-services">Услуги</a></li>
-						<li class="hero__item"><a href="https://t.me/carnacov" class="hero__button hero__button-contact" target="_blank">Связаться</a></li>
-					</ul>
+			<article class="article about" id="about">
+				<div class="container about__container">
+					<h1 class="about visually-hidden">Обо мне</h1>
+					<section class="section hero">
+						<h2 class="list-reset hero__title">Борис Карнаков</h2>
+						<p class="list-reset section__sub">Я начинающий верстальщик, создающий современные, адаптивные и SEO-оптимизированные сайты, которые помогают бизнесу привлекать клиентов и достигать целей. Ищете качественную верстку по макетам Figma или доработку существующего сайта? Вы в правильном месте!</p>
+						<p class="list-reset section__sub">Занимаюсь версткой сайтов. Моя страсть — превращать дизайнерские макеты в функциональные веб-страницы с чистым кодом и высокой скоростью загрузки. Работаю с HTML5, CSS3, JavaScript, популярными фреймворками (Bootstrap, Tailwind CSS).</p>
+						<ul class="list-reset hero__list">
+							<li class="hero__item"><a href="#services" class="hero__button hero__button-services">Услуги</a></li>
+							<li class="hero__item"><a href="https://t.me/carnacov" class="hero__button hero__button-contact" target="_blank">Связаться</a></li>
+						</ul>
 
-					<picture class="hero__picture">
-						<!-- 540 -->
-						<source srcset="./images/photo@540@1x.webp 1x, ./images/photo@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
-						<source srcset="./images/photo@540@1x.avif 1x, ./images/photo@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
-						<source srcset="./images/photo@540@1x.jpg 1x, ./images/photo@540@2x.jpg 2x" media="(max-width: 540px)">
-						<!-- 992 -->
-						<source srcset="./images/photo@992@1x.webp 1x, ./images/photo@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
-						<source srcset="./images/photo@992@1x.avif 1x, ./images/photo@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
-						<source srcset="./images/photo@992@1x.jpg 1x, ./images/photo@992@2x.jpg 2x" media="(max-width: 992px)">
-						<!-- 1920 -->
-						<source type="image/webp" srcset="./images/photo@1x.webp 1x, ./images/photo@2x.webp 2x">
-						<source type="image/avif" srcset="./images/photo@1x.avif 1x, ./images/photo@2x.avif 2x">
-						<img class="hero__picture-img" src="./images/photo@1x.jpg" srcset="./images/photo@2x.jpg 2x" width="616" height="640" fetchpriority="high" alt="Фотография в кофейне">
-					</picture>
+						<picture class="hero__picture">
+							<!-- 540 -->
+							<source srcset="./images/photo@540@1x.webp 1x, ./images/photo@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
+							<source srcset="./images/photo@540@1x.avif 1x, ./images/photo@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
+							<source srcset="./images/photo@540@1x.jpg 1x, ./images/photo@540@2x.jpg 2x" media="(max-width: 540px)">
+							<!-- 992 -->
+							<source srcset="./images/photo@992@1x.webp 1x, ./images/photo@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
+							<source srcset="./images/photo@992@1x.avif 1x, ./images/photo@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
+							<source srcset="./images/photo@992@1x.jpg 1x, ./images/photo@992@2x.jpg 2x" media="(max-width: 992px)">
+							<!-- 1920 -->
+							<source type="image/webp" srcset="./images/photo@1x.webp 1x, ./images/photo@2x.webp 2x">
+							<source type="image/avif" srcset="./images/photo@1x.avif 1x, ./images/photo@2x.avif 2x">
+							<img class="hero__picture-img" src="./images/photo@1x.jpg" srcset="./images/photo@2x.jpg 2x" width="616" height="640" fetchpriority="high" alt="Фотография в кофейне">
+						</picture>
+					</section>
+
+					<section class="section skills">
+						<h2 class="list-reset section__title skills__title">Навыки</h2>
+						<p class="list-reset section__sub skills__sub">Некоторые из моих любимых технологий, тем или инструментов, с которыми я работал</p>
+						<ul class="list-reset skills__list">
+							<li class="skills__item">HTML</li>
+							<li class="skills__item">CSS</li>
+							<li class="skills__item">SVG</li>
+							<li class="skills__item">JavaScript</li>
+							<li class="skills__item">Accessibility</li>
+							<li class="skills__item">Browsers</li>
+							<li class="skills__item">Bootstrap</li>
+							<li class="skills__item">Figma</li>
+							<li class="skills__item">Photoshop</li>
+							<li class="skills__item">Git</li>
+						</ul>
+					</section>
 				</div>
-			</section>
-
-			<section class="section stages" id="stages">
-				<div class="container stages__container">
-					<h2 class="list-reset section__title stages__title">Этапы разработки сайта до успешного запуска вашего проекта</h2>
-
-					<ul class="list-reset stages__list">
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Пошаговое руководство по созданию эффективного веб-сайта для бизнеса</h3>
-								<p class="list-reset section__sub stages__sub">Мы начинаем с тщательного планирования, чтобы понять ваши потребности и цели.</p>
-								<a href="https://carnacov.ru/guide" class="stages__link">Читать</a>
-							</article>
-						</li>
-
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Дизайн: создание привлекательного и функционального интерфейса для пользователей</h3>
-								<p class="list-reset section__sub stages__sub">Если у вас еще нет дизайна, его необходимо разработать. Я не занимаюсь дизайном сайтов, могу порекомендовать пару хороших специалистов.</p>
-								<a href="" class="stages__link">Выбрать дизайнера</a>
-							</article>
-						</li>
-
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Разработка: реализация дизайна с использованием HTML и CSS</h3>
-								<p class="list-reset section__sub stages__sub">Пишу чистый и эффективный код, чтобы обеспечить высокую производительность и доступность сайта.</p>
-								<a href="https://t.me/carnacov" target="_blank" class="stages__link">Связаться</a>
-							</article>
-						</li>
-					</ul>
-				</div>
-			</section>
+			</article>
 
 			<section class="section services" id="services">
 				<div class="container services__container">
@@ -160,17 +158,7 @@
 
 							<tr class="services__table-row">
 								<td class="services__table-column">SEO оптимизация</td>
-								<td class="services__table-column services__table-column--sub" data-label="Базовый">
-									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
-									</svg>
-								</td>
-
-								<td class="services__table-column services__table-column--sub" data-label="Лендинг">
-									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
-									</svg>
-								</td>
+								<td class="services__table-column services__table-column--sub" colspan="2">Использую семантическую разметку (HTML5) и оптимизирую код для лучшей индексации в Google и Яндекс.</td>
 							</tr>
 
 							<tr class="services__table-row">
@@ -190,7 +178,7 @@
 
 							<tr class="services__table-row">
 								<td class="services__table-column">Оптимизация скорости загрузки</td>
-								<td class="services__table-column services__table-column--sub" colspan="2" data-label="Базовый, Лендинг">От 90%</td>
+								<td class="services__table-column services__table-column--sub" colspan="2">Сжимаю изображения, минимизирую CSS и JavaScript, настраиваю кэширование для молниеносной загрузки страниц.</td>
 							</tr>
 
 							<tr class="services__table-row">
@@ -202,85 +190,189 @@
 									</svg>
 								</td>
 							</tr>
+
+							<tr class="services__table-row">
+								<td class="services__table-column" colspan="3">Дополнительно</td>
+							</tr>
+
+							<tr class="services__table-row">
+								<td class="services__table-column">Интерактивные элементы</td>
+								<td class="services__table-column services__table-column--sub" colspan="2">Реализую анимации, формы, слайдеры и другие динамические компоненты с использованием JavaScript, GSAP или jQuery.</td>
+							</tr>
+
+							<tr class="services__table-row">
+								<td class="services__table-column">Доработка и поддержка сайтов</td>
+								<td class="services__table-column services__table-column--sub" colspan="2">Исправляю ошибки в верстке, обновляю дизайн, добавляю новые функции и оптимизирую производительность.</td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
 			</section>
 
-			<section class="section portfolio" id="portfolio">
+			<section class="section stages" id="stages">
+				<div class="container stages__container">
+					<h2 class="list-reset section__title stages__title">Этапы разработки сайта до успешного запуска вашего проекта</h2>
+
+					<ul class="list-reset stages__list">
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Анализ задачи</h3>
+								<p class="list-reset section__sub stages__sub">Изучаю макет (Figma, Photoshop): структура, шрифты, цвета, адаптивность. Анализирую ТЗ: кроссбраузерность, производительность. Уточняю детали с клиентом: поведение элементов, приоритеты.</p>
+							</article>
+						</li>
+
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Планирование</h3>
+								<p class="list-reset section__sub stages__sub">Планирую HTML, CSS, адаптивность, JS. Выявляю проблемы, согласовываю решения. Итог: четкий план верстки.</p>
+							</article>
+						</li>
+
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Разработка: реализация дизайна с использованием HTML и CSS</h3>
+								<p class="list-reset section__sub stages__sub">Пишу чистый и эффективный код, чтобы обеспечить высокую производительность и доступность сайта.</p>
+							</article>
+						</li>
+
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Тестирование</h3>
+								<p class="list-reset section__sub stages__sub">Проверяю кроссбраузерность (Chrome, Firefox, Safari, Edge), адаптивность на всех устройствах и оптимизирую скорость загрузки, используя PageSpeed Insights и Lighthouse для идеальной работы сайта.</p>
+							</article>
+						</li>
+
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Сдача проекта</h3>
+								<p class="list-reset section__sub stages__sub">Передаю готовый, протестированный код заказчику. Обеспечиваю полную документацию, инструкции по развертыванию и поддержку при интеграции. Проверяю финальное соответствие требованиям и согласовываю результат.</p>
+							</article>
+						</li>
+
+						<li class="stages__item">
+							<article class="stages__article">
+								<h3 class="list-reset stages__title">Поддержка</h3>
+								<p class="list-reset section__sub stages__sub">После завершения проекта оказываю техническую поддержку: устраняю ошибки, консультирую по обновлениям и интеграции. Обеспечиваю стабильную работу сайта и оперативно реагирую на запросы заказчика.</p>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<article class="article portfolio" id="portfolio">
 				<div class="container portfolio__container">
-					<h2 class="list-reset section__title portfolio__title">Портфолио</h2>
-						<!-- Slider main container -->
-							<div class="image-slider swiper-container">
-								<!-- враппер -->
-								<div class="image-slider__wrapper swiper-wrapper">
-									<div class="image-slider__slide swiper-slide">
-										<picture class="portfolio__picture">
-											<!-- 540 -->
-											<source srcset="./images/xmelev@540@1x.webp 1x, ./images/xmelev@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
-											<source srcset="./images/xmelev@540@1x.avif 1x, ./images/xmelev@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
-											<source srcset="./images/xmelev@540@1x.jpg 1x, ./images/xmelev@540@2x.jpg 2x" media="(max-width: 540px)">
-											<!-- 992 -->
-											<source srcset="./images/xmelev@992@1x.webp 1x, ./images/xmelev@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
-											<source srcset="./images/xmelev@992@1x.avif 1x, ./images/xmelev@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
-											<source srcset="./images/xmelev@992@1x.jpg 1x, ./images/xmelev@992@2x.jpg 2x" media="(max-width: 992px)">
-											<!-- 1920 -->
-											<source type="image/webp" srcset="./images/xmelev@1920@1x.webp 1x, ./images/xmelev@1920@2x.webp 2x">
-											<source type="image/avif" srcset="./images/xmelev@1920@1x.avif 1x, ./images/xmelev@1920@2x.avif 2x">
-											<img class="portfolio__picture-img" src="./images/xmelev@1920@1x.jpg" srcset="./images/xmelev@1920@2x.jpg 2x" fetchpriority="high" alt="Главная страница сайта Евклид">
-										</picture>
+					<h2 class="list-reset article__title portfolio__title">Портфолио</h2>
 
-										<ul class="list-reset portfolio__list">
-											<li class="list-reset portfolio__item"><a href="https://xmelev.ru/" class="portfolio__link" target="_blank">Сайт</a></li>
-											<li class="list-reset portfolio__item"><a href="https://github.com/carnacov/xmelev" class="portfolio__link" target="_blank">Коды GitHub</a></li>
-										</ul>
-									</div>
+					<div class="portfolio__slider">
+						<div class="portfolio__slider-inner">
+							<section class="section portfolio__section-container">
+								<picture class="portfolio__picture">
+									<!-- 540 -->
+									<source srcset="./images/xmelev@540@1x.webp 1x, ./images/xmelev@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
+									<source srcset="./images/xmelev@540@1x.avif 1x, ./images/xmelev@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
+									<source srcset="./images/xmelev@540@1x.jpg 1x, ./images/xmelev@540@2x.jpg 2x" media="(max-width: 540px)">
+									<!-- 992 -->
+									<source srcset="./images/xmelev@992@1x.webp 1x, ./images/xmelev@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
+									<source srcset="./images/xmelev@992@1x.avif 1x, ./images/xmelev@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
+									<source srcset="./images/xmelev@992@1x.jpg 1x, ./images/xmelev@992@2x.jpg 2x" media="(max-width: 992px)">
+									<!-- 1920 -->
+									<source type="image/webp" srcset="./images/xmelev@1920@1x.webp 1x, ./images/xmelev@1920@2x.webp 2x">
+									<source type="image/avif" srcset="./images/xmelev@1920@1x.avif 1x, ./images/xmelev@1920@2x.avif 2x">
+									<img class="portfolio__picture-img" src="./images/xmelev@1920@1x.jpg" srcset="./images/xmelev@1920@2x.jpg 2x" fetchpriority="high" alt="Главная страница сайта Евклид">
+								</picture>
 
-									<div class="image-slider__slide swiper-slide">
-										<picture class="portfolio__picture">
-											<!-- 540 -->
-											<source srcset="./images/evklid@540@1x.webp 1x, ./images/evklid@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
-											<source srcset="./images/evklid@540@1x.avif 1x, ./images/evklid@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
-											<source srcset="./images/evklid@540@1x.jpg 1x, ./images/evklid@540@2x.jpg 2x" media="(max-width: 540px)">
-											<!-- 992 -->
-											<source srcset="./images/evklid@992@1x.webp 1x, ./images/evklid@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
-											<source srcset="./images/evklid@992@1x.avif 1x, ./images/evklid@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
-											<source srcset="./images/evklid@992@1x.jpg 1x, ./images/evklid@992@2x.jpg 2x" media="(max-width: 992px)">
-											<!-- 1920 -->
-											<source type="image/webp" srcset="./images/evklid@1920@1x.webp 1x, ./images/evklid@1920@2x.webp 2x">
-											<source type="image/avif" srcset="./images/evklid@1920@1x.avif 1x, ./images/evklid@1920@2x.avif 2x">
-											<img class="portfolio__picture-img" src="./images/evklid@1920@1x.jpg" srcset="./images/evklid@1920@2x.jpg 2x" fetchpriority="high" alt="Главная страница сайта Евклид">
-										</picture>
+								<h3 class="portfolio__title-sub">Сайт ведущего мероприятий</h3>
+								<p class="portfolio__sub">Разработал сайт для ведущего мероприятий: создал дизайн, выполнил верстку на HTML/CSS с адаптивностью для всех устройств. Развернул на GitHub Pages, привязав пользовательский домен. Провел SEO-оптимизацию, обеспечив высокую видимость в поисковых системах для привлечения клиентов.</p>
 
-										<ul class="list-reset portfolio__list">
-											<li class="list-reset portfolio__item"><a href="https://carnacov.github.io/evklid/" class="portfolio__link" target="_blank">Демо</a></li>
-											<li class="list-reset portfolio__item"><a href="https://github.com/carnacov/evklid" class="portfolio__link" target="_blank">Коды GitHub</a></li>
-										</ul>
-									</div>
-									<div class="swiper-slide">
-										<picture class="portfolio__picture">
-											<!-- 540 -->
-											<source srcset="./images/blanchard@540@1x.webp 1x, ./images/blanchard@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
-											<source srcset="./images/blanchard@540@1x.avif 1x, ./images/blanchard@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
-											<source srcset="./images/blanchard@540@1x.jpg 1x, ./images/blanchard@540@2x.jpg 2x" media="(max-width: 540px)">
-											<!-- 992 -->
-											<source srcset="./images/blanchard@992@1x.webp 1x, ./images/blanchard@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
-											<source srcset="./images/blanchard@992@1x.avif 1x, ./images/blanchard@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
-											<source srcset="./images/blanchard@992@1x.jpg 1x, ./images/blanchard@992@2x.jpg 2x" media="(max-width: 992px)">
-											<!-- 1920 -->
-											<source type="image/webp" srcset="./images/blanchard@1920@1x.webp 1x, ./images/blanchard@1920@2x.webp 2x">
-											<source type="image/avif" srcset="./images/blanchard@1920@1x.avif 1x, ./images/blanchard@1920@2x.avif 2x">
-											<img class="portfolio__picture-img" src="./images/blanchard@1920@1x.jpg" srcset="./images/blanchard@1920@2x.jpg 2x" fetchpriority="high" alt="Главная страница сайта Евклид">
-										</picture>
+								<ul class="list-reset portfolio__list">
+									<li class="list-reset portfolio__item"><a href="https://xmelev.ru/" class="portfolio__link" target="_blank">Сайт</a></li>
+									<li class="list-reset portfolio__item"><a href="https://github.com/carnacov/xmelev" class="portfolio__link" target="_blank">Коды GitHub</a></li>
+								</ul>
+							</section>
 
-										<ul class="list-reset portfolio__list">
-											<li class="list-reset portfolio__item"><a href="https://carnacov.github.io/blanchard/" class="portfolio__link" target="_blank">Демо</a></li>
-											<li class="list-reset portfolio__item"><a href=" https://github.com/carnacov/blanchard" class="portfolio__link" target="_blank">Коды GitHub</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
+							<section class="section portfolio__section-container">
+								<picture class="portfolio__picture">
+									<!-- 540 -->
+									<source srcset="./images/evklid@540@1x.webp 1x, ./images/evklid@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
+									<source srcset="./images/evklid@540@1x.avif 1x, ./images/evklid@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
+									<source srcset="./images/evklid@540@1x.jpg 1x, ./images/evklid@540@2x.jpg 2x" media="(max-width: 540px)">
+									<!-- 992 -->
+									<source srcset="./images/evklid@992@1x.webp 1x, ./images/evklid@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
+									<source srcset="./images/evklid@992@1x.avif 1x, ./images/evklid@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
+									<source srcset="./images/evklid@992@1x.jpg 1x, ./images/evklid@992@2x.jpg 2x" media="(max-width: 992px)">
+									<!-- 1920 -->
+									<source type="image/webp" srcset="./images/evklid@1920@1x.webp 1x, ./images/evklid@1920@2x.webp 2x">
+									<source type="image/avif" srcset="./images/evklid@1920@1x.avif 1x, ./images/evklid@1920@2x.avif 2x">
+									<img class="portfolio__picture-img" src="./images/evklid@1920@1x.jpg" srcset="./images/evklid@1920@2x.jpg 2x" fetchpriority="high" alt="Главная страница сайта Евклид">
+								</picture>
+
+								<h3 class="portfolio__title-sub">Работа на курсе SkillBox</h3>
+								<p class="portfolio__sub">Изучил основы HTML/CSS на курсе SkillBox. Освоил адаптивность, кроссбраузерность, pixel-perfect верстку, доступность, анимации и методологию БЭМ. Применил знания в проектах, создавая семантичный, оптимизированный код для современных веб-стандартов.</p>
+
+								<ul class="list-reset portfolio__list">
+									<li class="list-reset portfolio__item"><a href="https://carnacov.github.io/evklid/" class="portfolio__link" target="_blank">Демо</a></li>
+									<li class="list-reset portfolio__item"><a href="https://github.com/carnacov/evklid" class="portfolio__link" target="_blank">Коды GitHub</a></li>
+								</ul>
+							</section>
+
+							<section class="section portfolio__section-container">
+								<picture class="portfolio__picture">
+									<!-- 540 -->
+									<source srcset="./images/blanchard@540@1x.webp 1x, ./images/blanchard@540@2x.webp 2x" media="(max-width: 540px)" type="image/webp">
+									<source srcset="./images/blanchard@540@1x.avif 1x, ./images/blanchard@540@2x.avif 2x" media="(max-width: 540px)" type="image/avif">
+									<source srcset="./images/blanchard@540@1x.jpg 1x, ./images/blanchard@540@2x.jpg 2x" media="(max-width: 540px)">
+									<!-- 992 -->
+									<source srcset="./images/blanchard@992@1x.webp 1x, ./images/blanchard@992@2x.webp 2x" media="(max-width: 992px)" type="image/webp">
+									<source srcset="./images/blanchard@992@1x.avif 1x, ./images/blanchard@992@2x.avif 2x" media="(max-width: 992px)" type="image/avif">
+									<source srcset="./images/blanchard@992@1x.jpg 1x, ./images/blanchard@992@2x.jpg 2x" media="(max-width: 992px)">
+									<!-- 1920 -->
+									<source type="image/webp" srcset="./images/blanchard@1920@1x.webp 1x, ./images/blanchard@1920@2x.webp 2x">
+									<source type="image/avif" srcset="./images/blanchard@1920@1x.avif 1x, ./images/blanchard@1920@2x.avif 2x">
+									<img class="portfolio__picture-img" src="./images/blanchard@1920@1x.jpg" srcset="./images/blanchard@1920@2x.jpg 2x" fetchpriority="high" alt="Главная страница сайта Евклид">
+								</picture>
+
+								<h3 class="portfolio__title-sub">Дипломная работа SkillBox</h3>
+								<p class="portfolio__sub">Разработал сайт Blanchard, выполнив верстку на HTML/CSS с акцентом на чистый, семантичный код. Реализовал адаптивный дизайн для корректного отображения на всех устройствах (мобильные, планшеты, десктопы). Провел тестирование кроссбраузерности (Chrome, Firefox, Safari, Edge). Обеспечил соответствие макету и требованиям, уделяя внимание деталям интерфейса и UX.</p>
+
+								<ul class="list-reset portfolio__list">
+									<li class="list-reset portfolio__item"><a href="https://carnacov.github.io/blanchard/" class="portfolio__link" target="_blank">Демо</a></li>
+									<li class="list-reset portfolio__item"><a href=" https://github.com/carnacov/blanchard" class="portfolio__link" target="_blank">Коды GitHub</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="portfolio__nav">
+							<button class="portfolio__nav-btn portfolio__nav-btn--prev">←</button>
+							<button class="portfolio__nav-btn portfolio__nav-btn--next">→</button>
+						</div>
 					</div>
+				</div>
+			</article>
+
+			<section class="section faq" id="faq">
+				<div class="container faq__container">
+					<h2 class="list-reset section__title faq__title">Часто задаваемые вопросы</h2>
+					<ul class="faq__list list-reset">
+						<li class="faq__item">
+							<h3 class="faq__sub-title">Сколько стоит верстка сайта?</h3>
+							<p class="faq__sub">Стоимость зависит от сложности проекта. Лендинг — от 14900 рублей, многостраничный сайт — от 24990 рублей.</p>
+						</li>
+
+						<li class="faq__item">
+							<h3 class="faq__sub-title">Какие сроки выполнения?</h3>
+							<p class="faq__sub">Лендинг — 3–5 дней, многостраничный сайт — 7–14 дней. Точные сроки зависят от объема работы.</p>
+						</li>
+
+						<li class="faq__item">
+							<h3 class="faq__sub-title">Работаете ли с Figma?</h3>
+							<p class="faq__sub">Да, я работаю с Figma, Adobe XD, Photoshop и другими инструментами для создания макетов.</p>
+						</li>
+
+						<li class="faq__item">
+							<h3 class="faq__sub-title">Могу ли я вносить правки в процессе?</h3>
+							<p class="faq__sub">Конечно! Я обсуждаю промежуточные результаты и вношу корректировки по вашим пожеланиям.</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<section class="section certificates" id="certificates">
@@ -324,5 +416,7 @@
 			<p class="footer__copiright">carnacov.ru ©  2025 / задизайнено и заверсталено мной.</p>
 		</div>
 	</footer>
+
+	<script src="./script.js"></script>
 </body>
 </html>

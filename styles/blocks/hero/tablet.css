@@ -1,10 +1,11 @@
-/* Desktop */
+/* Tablet */
 
 @media (width <= 992px ) {
-	.hero__container {
+	.hero {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(5, auto-fit);
 		column-gap: 0px;
+		grid-column: 1 / 2;
 	}
 
 	.hero__picture {

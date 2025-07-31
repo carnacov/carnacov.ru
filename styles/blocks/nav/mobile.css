@@ -1,8 +1,0 @@
-/* Mobile */
-
-@media (width <= 540px) {
-	.nav__list {
-		column-gap: 15px;
-		justify-content: space-between;
-	}
-}

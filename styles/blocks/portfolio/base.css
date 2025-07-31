@@ -2,14 +2,25 @@
 
 .portfolio {
 	background-color: var(--color-back-secondary);
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .portfolio__container {
 	display: grid;
+	row-gap: 50px;
 }
 
 .portfolio__title {
 	justify-self: center;
+	font-size: 48px;
+	font-weight: 600;
+	max-width: 1000px;
+}
+
+.portfolio__title-sub {
+	font-size: 32px;
+	font-weight: 600;
 }
 
 .portfolio__picture-img {
@@ -20,9 +31,10 @@
 }
 
 .portfolio__list {
-	display: flex;
-	column-gap: 30px;
-	justify-content: flex-end;
+	display: grid;
+	grid-auto-flow: column;
+	row-gap: 25px;
+	column-gap: 25px;
 }
 
 .portfolio__link {
@@ -43,30 +55,74 @@
 	color: var(--color-back-primary);
 }
 
-/* Slider */
-
-
-
-.swiper-container {
-	z-index: 0;
+.portfolio__slider {
 	position: relative;
 	overflow: hidden;
 }
 
-.swiper-wrapper {
+.portfolio__slider-inner {
 	display: flex;
-	overflow-x: scroll;
-	scroll-snap-type: x mandatory;
-	scroll-snap-stop: normal;
-	column-gap: 50px;
-	transition: all 0.2s linear;
+	transition: transform 0.5s ease-in-out;
+	width: 100%;
 }
 
-.swiper-slide {
-	min-width: 100%;
-	display: grid;
-	row-gap: 30px;
-	scroll-snap-align: start;
-	margin-bottom: 30px;
+.portfolio__section-container {
+	flex: 0 0 100%;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.portfolio__section-container.active {
+	opacity: 1;
+}
+
+.portfolio__nav {
+	display: flex;
 	justify-content: center;
+	gap: 20px;
+}
+
+.portfolio__nav-btn {
+	background: var(--color-text-primary);
+	color: var(--color-back-primary);
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.portfolio__nav-btn:hover {
+	background: var(--color-creator-primary);
+}
+
+.portfolio__nav-btn:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Центрирование картинки на мобильных устройствах */
+@media (max-width: 540px) {
+	.portfolio__picture {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.portfolio__picture-img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* Адаптивность для кнопок */
+@media (max-width: 768px) {
+	.portfolio__nav-btn {
+		width: 32px;
+		height: 32px;
+		font-size: 16px;
+	}
 }

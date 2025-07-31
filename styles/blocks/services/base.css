@@ -1,7 +1,12 @@
 /* Base */
 
+.services {
+	background-color: var(--color-back-secondary);
+}
+
 .services__container {
 	display: grid;
+
 }
 
 .services__title {

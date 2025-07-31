@@ -24,9 +24,9 @@
 /* Logo */
 @import url('blocks/logo/index.css');
 
-/* Nav */
+/* Menu */
 
-@import url('blocks/nav/index.css');
+@import url('blocks/menu/index.css');
 
 /* Social */
 
@@ -36,9 +36,17 @@
 
 @import url('blocks/main/index.css');
 
+/* About */
+
+@import url('blocks/about/index.css');
+
 /* Hero */
 
 @import url('blocks/hero/index.css');
+
+/* Skills */
+
+@import url('blocks/skills/index.css');
 
 /* Stages */
 
@@ -52,9 +60,9 @@
 
 @import url('blocks/portfolio/index.css');
 
-/* Guide */
+/* Portfolio */
 
-@import url('blocks/guide/index.css');
+@import url('blocks/faq/index.css');
 
 /* Certificates */
 

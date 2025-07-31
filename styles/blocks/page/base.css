@@ -5,7 +5,7 @@
 	color: var(--color-text-primary);
 	font-family: system-ui, sans-serif;
 	font-size: 18px;
-	line-height: 1;
+	line-height: 1.5;
 }
 
 a, u, li {
@@ -17,6 +17,7 @@ a, u, li {
 
 .page__body {
 	margin: 0;
+    padding-top: 80px;
 }
 
 .list-reset {
@@ -29,4 +30,15 @@ a, u, li {
 	padding: 0 50px;
 	max-width: 1230px;
 	row-gap: 50px;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }

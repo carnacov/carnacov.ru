@@ -1,19 +1,22 @@
 /* Base */
 
-.hero__container {
+.hero {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(4, auto-fit);
+	grid-column: 1 / 3;
 	column-gap: 80px;
+	row-gap: 25px;
 }
 
 .hero__title {
 	font-size: 56px;
 	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .hero__picture {
-	grid-row: 1 / 4;
+	grid-row: 1 / 5;
 	grid-column: 2 / 2;
 }
 

@@ -1,4 +1,9 @@
 /* Base */
+@media (width <= 736px) {
+    .header__logo {
+        z-index: 1;
+    }
+}
 
 .header__logo svg path {
 	fill: var(--color-creator-primary);

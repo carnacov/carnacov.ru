@@ -1,5 +1,7 @@
 /* Mobile */
 
 @media (width <= 540px) {
-
+	.social {
+		padding-right: 50px;
+	}
 }

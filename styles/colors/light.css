@@ -9,3 +9,11 @@
 	--color-text-secondary: var(--color-lighter);
 	--color-creator-primary: var(--color-creator-dark);
 }
+
+.header {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stages__item {
+	background-image: url(/images/icons/stages__dark.svg);
+}

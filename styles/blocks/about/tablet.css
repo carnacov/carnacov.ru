@@ -1,0 +1,7 @@
+/* Tablet */
+
+@media (width <= 992px ) {
+	.about__container {
+		grid-template-columns: 1fr;
+	}
+}

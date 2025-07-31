@@ -1,5 +1,7 @@
-/* Desktop */
+/* Tablet */
 
 @media (width <= 992px ) {
-
+	.portfolio__section-container {
+		padding-bottom: 25px;
+	}
 }

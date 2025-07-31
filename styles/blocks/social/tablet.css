@@ -1,7 +1,15 @@
-/* Desktop */
+/* Tablet */
 
 @media (width <= 992px ) {
 	.social {
 		order: 1;
 	}
 }
+
+@media (width <= 1030px ) {
+	.social {
+		padding-right: 60px;
+	}
+}
+
+

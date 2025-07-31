@@ -1,5 +1,9 @@
 /* Base */
 
+.social {
+	justify-self: end;
+}
+
 .social__list {
 	display: flex;
 	column-gap: 30px;
