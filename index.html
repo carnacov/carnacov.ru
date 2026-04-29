@@ -12,20 +12,6 @@
 	<link rel="stylesheet" href="./styles/index.min.css">
 	<link rel="stylesheet" href="./styles/light.css" media="(prefers-color-scheme: light)">
 	<link rel="stylesheet" href="./styles/dark.css" media="(prefers-color-scheme: dark)">
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function(m,e,t,r,i,k,a){
-			m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-			m[i].l=1*new Date();
-			for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-			k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-		})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104275170', 'ym');
-
-		ym(104275170, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-	</script>
-
-	<noscript><div><img src="https://mc.yandex.ru/watch/104275170" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
 </head>
 <body class="page__body">
 	<header class="header">
@@ -46,10 +32,7 @@
 
 				<ul class="list-reset menu__list" id="menu__list">
 					<li class="menu__item"><a href="#about" class="menu__link">Обо мне</a></li>
-					<li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
-					<li class="menu__item"><a href="#stages" class="menu__link">Этапы</a></li>
 					<li class="menu__item"><a href="#portfolio" class="menu__link">Портфолио</a></li>
-					<li class="menu__item"><a href="#faq" class="menu__link">Вопросы</a></li>
 					<li class="menu__item"><a href="#certificates" class="menu__link">Сертификаты</a></li>
 				</ul>
 			</nav>
@@ -85,10 +68,6 @@
 						<h2 class="list-reset hero__title">Борис Карнаков</h2>
 						<p class="list-reset section__sub">Я &mdash; верстальщик, создаю современные, адаптивные и SEO-оптимизированные сайты, которые помогают бизнесу привлекать клиентов и достигать целей. Ищете качественную верстку по макетам Figma или доработку существующего сайта? Вы в правильном месте!</p>
 						<p class="list-reset section__sub">Моя страсть — превращать дизайнерские макеты в функциональные веб-страницы с чистым кодом и высокой скоростью загрузки. Работаю с HTML5, CSS3, JavaScript, популярными фреймворками (Bootstrap, Tailwind CSS).</p>
-						<ul class="list-reset hero__list">
-							<li class="hero__item"><a href="#services" class="hero__button hero__button-services">Услуги</a></li>
-							<li class="hero__item"><a href="https://t.me/carnacov" class="hero__button hero__button-contact" target="_blank">Связаться</a></li>
-						</ul>
 
 						<picture class="hero__picture">
 							<!-- 540 -->
@@ -113,7 +92,6 @@
 							<li class="skills__item">HTML</li>
 							<li class="skills__item">CSS</li>
 							<li class="skills__item">SVG</li>
-							<li class="skills__item">JavaScript</li>
 							<li class="skills__item">Accessibility</li>
 							<li class="skills__item">Browsers</li>
 							<li class="skills__item">Bootstrap</li>
@@ -124,154 +102,6 @@
 					</section>
 				</div>
 			</article>
-
-			<section class="section services" id="services">
-				<div class="container services__container">
-					<h2 class="list-reset section__title services__title">Услуги</h2>
-					<p class="list-reset section__sub services__sub">Здесь вы можете выбрать подходящий план для вашего проекта.</p>
-
-					<table class="services__table">
-						<tbody>
-							<tr class="services__table-row">
-								<td class="services__table-column"></td>
-								<td class="services__table-column">
-									<ul class="list-reset services__table-list">
-										<li class="services__table-item">
-											<h3 class="list-reset services__table-title">Базовый</h3>
-										</li>
-
-										<li class="services__table-item services__table-price" data-label="Цена">4900</li>
-										<li class="services__table-item services__table-fees" data-label="Услуга">За экран</li>
-										<li class="services__table-item services__table-trand" data-label="Для кого">Подходит для небольших сайтов</li>
-										<li class="services__table-item"><a href="https://t.me/carnacov" target="_blank" class="services__table-button">Заказать</a></li>
-									</ul>
-								</td>
-								<td class="services__table-column">
-									<ul class="list-reset services__table-list">
-										<li class="services__table-item">
-											<h3 class="list-reset services__table-title">Лендинг</h3>
-										</li>
-
-										<li class="services__table-item services__table-price" data-label="Цена">14900</li>
-										<li class="services__table-item services__table-fees" data-label="Услуга">За 4 экрана, свыше + 4490 рублей за каждый экран</li>
-										<li class="services__table-item services__table-trand" data-label="Для кого">Оптимально для средних проектов</li>
-										<li class="services__table-item"><a href="https://t.me/carnacov" target="_blank" class="services__table-button">Заказать</a></li>
-									</ul>
-								</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column" colspan="3">Базовые функции</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column">Количество экранов</td>
-								<td class="services__table-column services__table-column--sub" data-label="Базовый">От одного экрана</td>
-								<td class="services__table-column services__table-column--sub" data-label="Лендинг">От четырех экранов</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column">SEO оптимизация</td>
-								<td class="services__table-column services__table-column--sub" colspan="2">Использую семантическую разметку (HTML5) и оптимизирую код для лучшей индексации в Google и Яндекс.</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column">Обновление и поддержка</td>
-								<td class="services__table-column services__table-column--sub" data-label="Базовый">
-									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
-									</svg>
-								</td>
-
-								<td class="services__table-column services__table-column--sub" data-label="Лендинг">
-									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
-									</svg>
-								</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column">Оптимизация скорости загрузки</td>
-								<td class="services__table-column services__table-column--sub" colspan="2">Сжимаю изображения, минимизирую CSS и JavaScript, настраиваю кэширование для молниеносной загрузки страниц.</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column">Многоязычность</td>
-								<td class="services__table-column services__table-column--sub" data-label="Базовый">Не включено в тариф</td>
-								<td class="services__table-column services__table-column--sub" data-label="Лендинг">
-									<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M17.3479 1.56384L6.7479 12.1638C6.65402 12.2585 6.52622 12.3117 6.3929 12.3117C6.25958 12.3117 6.13178 12.2585 6.0379 12.1638L0.6479 6.7738C0.55324 6.68 0.5 6.5522 0.5 6.4188C0.5 6.2855 0.55324 6.1577 0.6479 6.0638L1.3479 5.3638C1.44178 5.2692 1.56958 5.2159 1.7029 5.2159C1.83622 5.2159 1.96402 5.2692 2.0579 5.3638L6.3879 9.6938L15.9379 0.143843C16.1357 -0.0479475 16.4501 -0.0479475 16.6479 0.143843L17.3479 0.853843C17.4426 0.947723 17.4958 1.07552 17.4958 1.20884C17.4958 1.34216 17.4426 1.46995 17.3479 1.56384Z" fill="#222E3E"/>
-									</svg>
-								</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column" colspan="3">Дополнительно</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column">Интерактивные элементы</td>
-								<td class="services__table-column services__table-column--sub" colspan="2">Реализую анимации, формы, слайдеры и другие динамические компоненты с использованием JavaScript, GSAP или jQuery.</td>
-							</tr>
-
-							<tr class="services__table-row">
-								<td class="services__table-column">Доработка и поддержка сайтов</td>
-								<td class="services__table-column services__table-column--sub" colspan="2">Исправляю ошибки в верстке, обновляю дизайн, добавляю новые функции и оптимизирую производительность.</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</section>
-
-			<section class="section stages" id="stages">
-				<div class="container stages__container">
-					<h2 class="list-reset section__title stages__title">Этапы разработки сайта до успешного запуска вашего проекта</h2>
-
-					<ul class="list-reset stages__list">
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Анализ задачи</h3>
-								<p class="list-reset section__sub stages__sub">Изучаю макет (Figma, Photoshop): структура, шрифты, цвета, адаптивность. Анализирую ТЗ: кроссбраузерность, производительность. Уточняю детали с клиентом: поведение элементов, приоритеты.</p>
-							</article>
-						</li>
-
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Планирование</h3>
-								<p class="list-reset section__sub stages__sub">Планирую HTML, CSS, адаптивность, JS. Выявляю проблемы, согласовываю решения. Итог: четкий план верстки.</p>
-							</article>
-						</li>
-
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Разработка: реализация дизайна с использованием HTML и CSS</h3>
-								<p class="list-reset section__sub stages__sub">Пишу чистый и эффективный код, чтобы обеспечить высокую производительность и доступность сайта.</p>
-							</article>
-						</li>
-
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Тестирование</h3>
-								<p class="list-reset section__sub stages__sub">Проверяю кроссбраузерность (Chrome, Firefox, Safari, Edge), адаптивность на всех устройствах и оптимизирую скорость загрузки, используя PageSpeed Insights и Lighthouse для идеальной работы сайта.</p>
-							</article>
-						</li>
-
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Сдача проекта</h3>
-								<p class="list-reset section__sub stages__sub">Передаю готовый, протестированный код заказчику. Обеспечиваю полную документацию, инструкции по развертыванию и поддержку при интеграции. Проверяю финальное соответствие требованиям и согласовываю результат.</p>
-							</article>
-						</li>
-
-						<li class="stages__item">
-							<article class="stages__article">
-								<h3 class="list-reset stages__title">Поддержка</h3>
-								<p class="list-reset section__sub stages__sub">После завершения проекта оказываю техническую поддержку: устраняю ошибки, консультирую по обновлениям и интеграции. Обеспечиваю стабильную работу сайта и оперативно реагирую на запросы заказчика.</p>
-							</article>
-						</li>
-					</ul>
-				</div>
-			</section>
 
 			<article class="article portfolio" id="portfolio">
 				<div class="container portfolio__container">
@@ -362,33 +192,6 @@
 				</div>
 			</article>
 
-			<section class="section faq" id="faq">
-				<div class="container faq__container">
-					<h2 class="list-reset section__title faq__title">Часто задаваемые вопросы</h2>
-					<ul class="faq__list list-reset">
-						<li class="faq__item">
-							<h3 class="faq__sub-title">Сколько стоит верстка сайта?</h3>
-							<p class="faq__sub">Стоимость зависит от сложности проекта. Лендинг — от 14900 рублей, многостраничный сайт — от 24990 рублей.</p>
-						</li>
-
-						<li class="faq__item">
-							<h3 class="faq__sub-title">Какие сроки выполнения?</h3>
-							<p class="faq__sub">Лендинг — 3–5 дней, многостраничный сайт — 7–14 дней. Точные сроки зависят от объема работы.</p>
-						</li>
-
-						<li class="faq__item">
-							<h3 class="faq__sub-title">Работаете ли с Figma?</h3>
-							<p class="faq__sub">Да, я работаю с Figma, Adobe XD, Photoshop и другими инструментами для создания макетов.</p>
-						</li>
-
-						<li class="faq__item">
-							<h3 class="faq__sub-title">Могу ли я вносить правки в процессе?</h3>
-							<p class="faq__sub">Конечно! Я обсуждаю промежуточные результаты и вношу корректировки по вашим пожеланиям.</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-
 			<section class="section certificates" id="certificates">
 				<div class="container certificates__container">
 					<h2 class="list-reset section__title certificates__title">Сертификаты</h2>
@@ -436,7 +239,6 @@
 
 				carnacov.ru
 			</a>
-			<p class="footer__title">Разработка и поддержка сайтов с фокусом на пользовательский опыт для малого/среднего бизнеса</p>
 			<p class="footer__copiright">carnacov.ru ©  2025 / заверсталено мной.</p>
 		</div>
 	</footer>
